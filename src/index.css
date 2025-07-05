@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-bricolage: "Bricolage Grotesque", sans-serif;
+  --color-faint-red: #e60c0c99;
+  --color-red: #fd1100;
+  --color-dark-grey: #111111;
+}
+
+@layer base {
+  h1 {
+    @apply font-bricolage text-5xl font-bold;
+  }
+  p {
+    @apply font-poppins;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-medium text-white text-[20px] w-[175px] h-[51px] opacity-100 py-[10px] px-[auto] border-b-2 border-r-2 rounded-md transition-all;
+  }
+
+  .btn-orange {
+    @apply bg-red border-white;
+  }
+
+  .btn-black {
+    @apply bg-dark-grey border-red;
+  }
+}
+
+@layer utilities {
+  .fixed-header {
+    @apply fixed top-0 left-0 w-full;
+  }
+
+  .red-text {
+    @apply text-red;
+  }
+}
