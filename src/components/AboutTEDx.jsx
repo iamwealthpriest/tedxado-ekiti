@@ -5,7 +5,7 @@ const AboutTEDx = () => {
     <div>
       <div className="flex flex-col gap-[24px] px-10 mt-20">
         <h2>
-          About <span className="red-text">TEDx</span>
+          About <span className="red-text">TEDˣ</span>
         </h2>
         <p className="text-4xl">Global ideas. Local voices.</p>
         <p className="text-2xl">
@@ -24,7 +24,7 @@ const AboutTEDx = () => {
       </div>
       <div className="flex flex-col gap-[24px] px-10 mt-20">
         <h2>
-          About <span className="red-text">TEDx</span> Ado-Ekiti
+          About <span className="red-text">TEDˣ</span> Ado-Ekiti
         </h2>
         <p className="text-2xl">
           For years, Ekiti has been called quiet. Remote. Passed over. But we
