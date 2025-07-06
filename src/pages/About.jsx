@@ -5,7 +5,7 @@ import GetInolved from "../components/GetInolved";
 
 const About = () => {
   return (
-    <section className="min-h-screen w-full bg-black text-white">
+    <section className="min-h-screen w-full bg-black text-white lg:mt-20">
       <div className="relative h-[278px]">
         <img
           src={about}

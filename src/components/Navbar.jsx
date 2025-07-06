@@ -8,8 +8,8 @@ const Navbar = () => {
 
   const navLinkStyle = ({ isActive }) =>
     isActive
-      ? "text-red font-semibold underline underline-offset-4"
-      : "text-white/80 hover:text-white transition-colors";
+      ? "text-red font-semibold underline underline-offset-4 text-3xl transition-all duration-300 ease-in-out"
+      : "text-white/80 hover:text-white transition-all duration-300 ease-in-out";
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
         </NavLink>
 
         <div className="hidden md:flex items-center gap-[80px]">
-          <div className="flex gap-6 text-base font-poppins">
+          <div className="flex gap-6 text-2xl font-poppins">
             <NavLink to="/" className={navLinkStyle}>
               Home
             </NavLink>
