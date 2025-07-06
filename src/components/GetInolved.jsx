@@ -20,7 +20,7 @@ const GetInolved = () => {
         />
         <InvolveCard
           header="Join the trybe"
-          text="Find Your People. Build the Future. Be part of a growing circle of thinkers, doers, and dreamers driving change from Ekiti to the world."
+          text="Find your people. Build the future. Join a circle of thinkers, doers, and dreamers of change."
           btnText="Join our community"
           btnClassName="btn-black"
         />

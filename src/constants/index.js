@@ -7,27 +7,27 @@ import whatsappIcon from "../assets/whatsapplogo.png";
 export const socialLinks = [
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/company/tedxadoekiti",
+    href: "https://www.linkedin.com/company/official-tedxadoekiti/?viewAsMember=true",
     icon: linkedinIcon,
   },
   {
     name: "Whatsapp",
-    href: "https://whatsapp.com/tedxadoekiti",
+    href: "https://chat.whatsapp.com/H3UsHi8bT34DEkMh1lLxVn",
     icon: whatsappIcon,
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/tedxadoekiti",
+    href: "https://x.com/TedxAdo_Ekiti",
     icon: twitterIcon,
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/tedxadoekiti",
+    href: "https://www.instagram.com/officialtedxadoekiti",
     icon: instagramIcon,
   },
   {
     name: "YouTube",
-    href: "https://youtube.com/@tedxadoekiti",
+    href: "https://www.youtube.com/@TEDxAdo-Ekiti",
     icon: youtubeIcon,
   },
 ];
