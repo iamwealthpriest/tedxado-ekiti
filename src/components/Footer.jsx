@@ -1,15 +1,18 @@
 import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
 import { socialLinks } from "../constants";
 
 const Footer = () => {
   return (
     <div className="bg-black text-white py-[70px] px-[60px] flex flex-row justify-between flex-wrap gap-y-10">
       <div className="flex flex-col gap-[28px]">
-        <img
-          src={logo}
-          alt="TEDxAdo-Ekiti logo"
-          className="w-[156.79px] h-[17.6px] object-contain"
-        />
+        <NavLink to="/" className="w-[156.79px] h-[17.6px]">
+          <img
+            src={logo}
+            alt="TEDxAdo-Ekiti logo"
+            className="w-[156.79px] h-[17.6px] object-contain"
+          />
+        </NavLink>
         <div className="flex flex-row gap-[12px]">
           {socialLinks.map(({ name, href, icon }) => (
             <a
