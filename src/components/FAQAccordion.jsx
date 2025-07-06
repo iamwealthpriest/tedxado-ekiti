@@ -7,7 +7,7 @@ const FAQAccordion = ({ question, answer }) => {
 
   return (
     <div
-      className={`border border-orange/25 rounded-2xl mb-4 p-2 overflow-hidden transition-all w-3/5 ${
+      className={`border border-orange/25 rounded-2xl mb-4 p-2 overflow-hidden transition-all lg:w-3/5 sm:w-full md:w-full ${
         isOpen
           ? "border-b-2 border-r-2 border-orange shadow-[4px_4px_10px_#ff2b0655]"
           : "border"
