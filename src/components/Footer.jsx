@@ -1,7 +1,68 @@
-import React from "react";
+import logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
+import { socialLinks } from "../constants";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="bg-black text-white py-[70px] px-6 md:px-[60px] flex flex-col md:flex-row justify-between items-start md:items-center gap-y-12 md:gap-0">
+      {/* Links + Contact (appears first on mobile, second on desktop) */}
+      <div className="order-1 md:order-2 flex flex-col gap-8 w-full md:w-auto font-poppins text-white/80">
+        <div className="flex flex-col md:flex-row md:gap-[32px] gap-4">
+          <a href="/about" className="hover:text-white transition-colors">
+            About us
+          </a>
+          <a href="/partnership" className="hover:text-white transition-colors">
+            Partnership
+          </a>
+          <a href="/tickets" className="hover:text-white transition-colors">
+            Tickets
+          </a>
+        </div>
+        <div className="flex flex-col md:flex-row gap-2 md:gap-[16px]">
+          <a
+            href="mailto:mail.tedxekiti@gmail.com"
+            className="hover:text-white transition-colors"
+          >
+            mail.tedxekiti@gmail.com
+          </a>
+          <a
+            href="tel:+2348072101662"
+            className="hover:text-white transition-colors"
+          >
+            +2348072101662
+          </a>
+        </div>
+      </div>
+
+      {/* Logo + Socials (appears second on mobile, first on desktop) */}
+      <div className="order-2 md:order-1 flex flex-col gap-6 w-full md:w-auto">
+        <NavLink to="/" className="block w-[156.79px] h-[17.6px]">
+          <img
+            src={logo}
+            alt="TEDxAdo-Ekiti logo"
+            className="w-full h-full object-contain"
+          />
+        </NavLink>
+        <div className="flex flex-row gap-[12px]">
+          {socialLinks.map(({ name, href, icon }) => (
+            <a
+              key={name}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity duration-200"
+            >
+              <img
+                src={icon}
+                alt={`${name} icon`}
+                className="w-[24px] h-[24px] object-contain"
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

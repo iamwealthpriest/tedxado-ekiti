@@ -6,10 +6,12 @@
   --color-faint-red: #e60c0c99;
   --color-red: #fd1100;
   --color-dark-grey: #111111;
+  --color-white-20: #fcfcfc33;
+  --color-orange: #ff2b06;
 }
 
 @layer base {
-  h1 {
+  h2 {
     @apply font-bricolage text-5xl font-bold;
   }
   p {
@@ -19,7 +21,7 @@
 
 @layer components {
   .btn {
-    @apply font-medium text-white text-[20px] w-[175px] h-[51px] opacity-100 py-[10px] px-[auto] border-b-2 border-r-2 rounded-md transition-all;
+    @apply font-poppins font-medium text-white text-[20px]  opacity-100 py-[10px] px-[20px] border-b-2 border-r-2 rounded-md transition-all;
   }
 
   .btn-orange {
