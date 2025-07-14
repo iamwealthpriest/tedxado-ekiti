@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-[70px] px-6 md:px-[60px] flex flex-col md:flex-row justify-between items-start md:items-center gap-y-12 md:gap-0">
       {/* Links + Contact (appears first on mobile, second on desktop) */}
-      <div className="order-1 md:order-2 flex flex-col gap-8 w-full md:w-auto font-poppins text-white/80">
-        <div className="flex flex-col md:flex-row md:gap-[32px] gap-4">
+      <div className="order-1 md:order-2 flex flex-col gap-8 w-full md:w-auto font-hupaisa text-white/80">
+        <div className="flex flex-col justify-end md:flex-row md:gap-[32px] gap-4">
           <a href="/about" className="hover:text-white transition-colors">
             About us
           </a>
@@ -18,12 +18,18 @@ const Footer = () => {
             Tickets
           </a>
         </div>
-        <div className="flex flex-col md:flex-row gap-2 md:gap-[16px]">
+        <div className="flex flex-col justify-end md:flex-row gap-2 md:gap-[16px]">
           <a
             href="mailto:mail.tedxekiti@gmail.com"
             className="hover:text-white transition-colors"
           >
             mail.tedxekiti@gmail.com
+          </a>
+          <a
+            href="tel:+2348160812613"
+            className="hover:text-white transition-colors"
+          >
+            +2348160812613
           </a>
           <a
             href="tel:+2348072101662"

@@ -1,7 +1,49 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Hupaisa";
+  src: url("/fonts/Hupaisa-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hupaisa";
+  src: url("/fonts/Hupaisa-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hupaisa";
+  src: url("/fonts/Hupaisa-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hupaisa";
+  src: url("/fonts/Hupaisa-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hupaisa";
+  src: url("/fonts/Hupaisa-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hupaisa";
+  src: url("/fonts/Hupaisa-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
+  --font-hupaisa: "Hupaisa", sans-serif;
   --font-bricolage: "Bricolage Grotesque", sans-serif;
   --color-faint-red: #e60c0c99;
   --color-red: #fd1100;
@@ -15,13 +57,13 @@
     @apply font-bricolage text-5xl font-bold;
   }
   p {
-    @apply font-poppins;
+    @apply font-hupaisa font-light;
   }
 }
 
 @layer components {
   .btn {
-    @apply font-poppins font-medium text-white text-[20px]  opacity-100 py-[10px] px-[20px] border-b-2 border-r-2 rounded-md transition-all;
+    @apply font-hupaisa text-white text-[20px] font-light opacity-100 hover:opacity-80 py-[10px] px-[20px] border-b-2 border-r-2 rounded-md transition-all;
   }
 
   .btn-orange {

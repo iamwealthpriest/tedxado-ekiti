@@ -1,0 +1,85 @@
+import Laughter from "../assets/teams/laughter.png";
+import Victor from "../assets/teams/victor.png";
+import Rebecca from "../assets/teams/rebecca.png";
+import Deborah from "../assets/teams/deborah.png";
+import Ifeoluwa from "../assets/teams/ifeoluwa.png";
+import Timilehin from "../assets/teams/timi.png";
+import Adetomiwa from "../assets/teams/tomiwa.png";
+import Bukola from "../assets/teams/bukola.png";
+import Julius from "../assets/teams/julius.png";
+import Folashade from "../assets/teams/folashade.png";
+import Omisore from "../assets/teams/omisore.png";
+import Imole from "../assets/teams/imole.png";
+
+export const teamMembers = [
+  {
+    name: "Laughter Atanda",
+    role: "Licensee",
+    image: Laughter,
+  },
+  {
+    name: "Victor Wave",
+    role: "Co-Licensee",
+    image: Victor,
+  },
+  {
+    name: "Abolarinwa Rebecca",
+    role: "Project Manager",
+    image: Rebecca,
+  },
+  {
+    name: "Deborah Ajiboye",
+    role: "Project Manager II",
+    image: Deborah,
+  },
+  {
+    name: "Ifeoluwa Areola",
+    role: "Lead, Creative Team",
+    image: Ifeoluwa,
+  },
+  {
+    name: "Timilehin Femi",
+    role: "Lead, Human Resource",
+    image: Timilehin,
+  },
+  {
+    name: "Christianah Jayeola",
+    role: "Lead, Publicity & Marketing",
+    image: "",
+  },
+  {
+    name: "Adetomiwa Zoe",
+    role: "Lead, Sponsorship",
+    image: Adetomiwa,
+  },
+  {
+    name: "Favour Bukola",
+    role: "Lead, Hospitality & Experience",
+    image: Bukola,
+  },
+  {
+    name: "Deborah Ojo",
+    role: "Lead, Communication & PR",
+    image: "",
+  },
+  {
+    name: "Julius Onifade",
+    role: "Lead, Media & Technical",
+    image: Julius,
+  },
+  {
+    name: "Folashade Adekunle",
+    role: "Lead, Content Creation",
+    image: Folashade,
+  },
+  {
+    name: "Omisore Hallelujah",
+    role: "Lead, Logistics",
+    image: Omisore,
+  },
+  {
+    name: "Imole Alli",
+    role: "Lead, Finance & Budget",
+    image: Imole,
+  },
+];
