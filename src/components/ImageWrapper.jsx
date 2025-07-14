@@ -2,7 +2,7 @@ import droplet from "../assets/teams/droplet.png";
 
 const ImageWrapper = ({ image, alt }) => {
   return (
-    <div className="relative w-[403px] h-[559px]">
+    <div className="relative w-[403px] h-[559px] group">
       <img
         src={droplet}
         alt="droplet background"
