@@ -10,6 +10,8 @@ import Julius from "../assets/teams/julius.png";
 import Folashade from "../assets/teams/folashade.png";
 import Omisore from "../assets/teams/omisore.png";
 import Imole from "../assets/teams/imole.png";
+import Christianah from "../assets/teams/christianah.png";
+import DeborahOjo from "../assets/teams/deborahOjo.png";
 
 export const teamMembers = [
   {
@@ -45,7 +47,7 @@ export const teamMembers = [
   {
     name: "Christianah Jayeola",
     role: "Lead, Publicity & Marketing",
-    image: "",
+    image: Christianah,
   },
   {
     name: "Adetomiwa Zoe",
@@ -60,7 +62,7 @@ export const teamMembers = [
   {
     name: "Deborah Ojo",
     role: "Lead, Communication & PR",
-    image: "",
+    image: DeborahOjo,
   },
   {
     name: "Julius Onifade",
