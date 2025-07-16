@@ -8,13 +8,13 @@ const AboutTEDx = () => {
           About <span className="red-text">TEDˣ</span>
         </h2>
         <p className="text-4xl">Global ideas. Local voices.</p>
-        <p className="text-2xl">
+        <p className="text-2xl font-thin">
           TEDx is a global movement rooted in the simple yet powerful belief
           that ideas can spark change in a room, a city, or the world. While TED
           began as a conference for Technology, Entertainment, and Design, it
           has grown into a global platform for ideas worth spreading.
         </p>
-        <p className="text-2xl">
+        <p className="text-2xl font-thin">
           In the spirit of that mission, TEDx was created. It is a program of
           independently organized events that bring people together to share a
           TED-like experience at the local level. TEDx events are licensed by
@@ -26,14 +26,14 @@ const AboutTEDx = () => {
         <h2>
           About <span className="red-text">TEDˣ</span> Ado-Ekiti
         </h2>
-        <p className="text-2xl">
+        <p className="text-2xl font-thin">
           For years, Ekiti has been called quiet. Remote. Passed over. But we
           see it differently. We see a seedbed. We believe ideas don’t only come
           from capital cities. That brilliance isn’t bound by traffic lights or
           skyscrapers. That the places we come from still hold the power to
           shape where we are going.
         </p>
-        <p className="text-2xl">
+        <p className="text-2xl font-thin">
           TEDxAdoEkiti is more than an event. It is a signal. A shift. A chance
           to make the world look again. At Ekiti. At overlooked places. At
           people who stayed. <br />

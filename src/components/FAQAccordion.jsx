@@ -15,7 +15,7 @@ const FAQAccordion = ({ question, answer }) => {
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center px-4 py-2 text-left font-poppins text-white"
+        className="w-full flex justify-between items-center px-4 py-2 text-left font-hupaisa text-white"
       >
         <span
           className={`font-medium transition-all duration-300 ease-in-out ${
