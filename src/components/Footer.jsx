@@ -11,7 +11,10 @@ const Footer = () => {
           <a href="/about" className="hover:text-white transition-colors">
             About us
           </a>
-          <a href="/partnership" className="hover:text-white transition-colors">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
+            className="hover:text-white transition-colors"
+          >
             Partnership
           </a>
           <a href="/tickets" className="hover:text-white transition-colors">

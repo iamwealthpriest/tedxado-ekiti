@@ -3,6 +3,108 @@ import twitterIcon from "../assets/xlogo.png";
 import linkedinIcon from "../assets/linkedinlogo.png";
 import youtubeIcon from "../assets/youtubelogo.png";
 import whatsappIcon from "../assets/whatsapplogo.png";
+import cocacola from "../assets/home/cocacola.svg";
+import figma from "../assets/home/figma.svg";
+import microsoft from "../assets/home/microsoft.svg";
+import JD from "../assets/home/Jesudamilare.png";
+import femiA from "../assets/home/femi-aluko.png";
+import toyosiA from "../assets/home/toyosi-akerele.png";
+import blessingD from "../assets/home/blessing-dada.png";
+import richardA from "../assets/home/richard-afahene.png";
+import lawrenceE from "../assets/home/lawrence-ekundayo.png";
+import Regular from "../assets/home/Regular.png";
+import VIP from "../assets/home/VIP.png";
+import VVIP from "../assets/home/VVIP.png";
+
+export const homeTickets = [
+  {
+    name: "Regular",
+    image: Regular,
+    link: "https://buytickets.com",
+  },
+  {
+    name: "VIP",
+    image: VIP,
+    link: "https://buytickets.com",
+  },
+  {
+    name: "VVIP",
+    image: VVIP,
+    link: "https://buytickets.com",
+  },
+];
+
+export const sponsors = [
+  {
+    name: "cocacola",
+    icon: cocacola,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "microsoft",
+    icon: microsoft,
+  },
+  {
+    name: "microsoft",
+    icon: microsoft,
+  },
+  {
+    name: "cocacola",
+    icon: cocacola,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "cocacola",
+    icon: cocacola,
+  },
+  {
+    name: "microsoft",
+    icon: microsoft,
+  },
+];
+
+export const SpeakerArray = [
+  {
+    name: "Jesudamilare Adesegun-David",
+    position: "CEO, Ennovate Lab",
+    image: JD,
+  },
+  {
+    name: "Femi Aluko",
+    position: "CEO, Chowdeck",
+    image: femiA,
+  },
+  {
+    name: "Toyosi Akerele",
+    position: "CEO, Chowdeck",
+    image: toyosiA,
+  },
+  {
+    name: "Blessing Dada",
+    position: "CEO, Chowdeck",
+    image: blessingD,
+  },
+  {
+    name: "Richard Afahene",
+    position: "Product Designer",
+    image: richardA,
+  },
+  {
+    name: "Lawrence Ekundayo",
+    position: "Product designer",
+    image: lawrenceE,
+  },
+];
 
 export const socialLinks = [
   {

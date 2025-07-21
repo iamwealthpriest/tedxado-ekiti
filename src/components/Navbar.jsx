@@ -25,7 +25,7 @@ const Navbar = () => {
           />
         </NavLink>
 
-        <div className="hidden md:flex items-center gap-[80px]">
+        <div className="hidden lg:flex items-center gap-[80px]">
           <div className="flex gap-6 text-2xl font-hupaisa font-light">
             <NavLink to="/" className={navLinkStyle}>
               Home
@@ -46,12 +46,18 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4">
             <Button text="Get your ticket" className="btn-orange" />
-            <Button text="Partner with us" className="btn-black" />
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button text="Partner with us" className="btn-black" />
+            </a>
           </div>
         </div>
 
         <button
-          className="md:hidden text-2xl focus:outline-none"
+          className="lg:hidden text-2xl focus:outline-none"
           onClick={toggleMenu}
         >
           {isOpen ? "✖" : "☰"}
@@ -59,7 +65,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden px-6 pb-6 pt-4 bg-black flex flex-col font-hupaisa gap-6">
+        <div className="lg:hidden px-6 pb-6 pt-4 bg-black flex flex-col font-hupaisa gap-6">
           <NavLink to="/" className={navLinkStyle} onClick={closeMenu}>
             Home
           </NavLink>

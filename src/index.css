@@ -60,6 +60,9 @@
     @apply font-hupaisa font-light;
   }
 }
+NavLink {
+  @apply cursor-pointer;
+}
 
 @layer components {
   .btn {
@@ -82,5 +85,29 @@
 
   .red-text {
     @apply text-red;
+  }
+
+  .heading-with-underline {
+    @apply text-5xl font-bold font-bricolage relative text-left;
+  }
+
+  .heading-with-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    width: 19rem;
+    height: 0.25rem;
+    background-color: red;
+    border-radius: theme("borderRadius.full");
+  }
+
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
