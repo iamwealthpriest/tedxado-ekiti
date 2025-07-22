@@ -12,7 +12,7 @@ import Omisore from "../assets/teams/omisore.png";
 import Imole from "../assets/teams/imole.png";
 import Christianah from "../assets/teams/christianah.png";
 import DeborahOjo from "../assets/teams/deborahOjo.png";
-import LaughterA from "../assets/home/laughter.png";
+import LaughterA from "../assets/home/laughter.jpg";
 import VictorW from "../assets/home/wave.png";
 import RebeccaA from "../assets/home/Rebecca.png";
 import DeborahA from "../assets/home/Ajiboye.jpg";
