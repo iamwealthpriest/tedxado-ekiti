@@ -138,7 +138,7 @@ export const faqData = [
   {
     question: "Where is the venue?",
     answer:
-      "The event will take place at The Pavilion, located in the heart of Ado-Ekiti, Ekiti State, Nigeria. It is a space that reflects the spirit of this gathering: grounded, open, and full of possibility.",
+      "The event will take place in the heart of Ado-Ekiti,Ekiti State, Nigeria. It is a space that reflects the spirit of this gathering: grounded, open, and full of possibility.",
   },
   {
     question: "What should I wear?",

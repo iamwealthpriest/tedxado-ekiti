@@ -8,24 +8,24 @@ export const whyAttendReasons = [
     icon: Idea,
     title: "Spark your thinking",
     description:
-      "This is a placeholder for the subtitle text and will describe the title aforementioned",
+      "You’ll encounter ideas that challenge your thinking and open new possibilities.",
   },
   {
     icon: Plug,
     title: "Connect with a new kind of community",
     description:
-      "This is a placeholder for the subtitle text and will describe the title aforementioned",
+      "You’ll connect with a vibrant community of builders, creatives, and change-makers.",
   },
   {
     icon: View,
     title: "See Ekiti in a whole new light",
     description:
-      "This is a placeholder for the subtitle text and will describe the title aforementioned",
+      "You’ll begin to see Ekiti not just as home, but as the seedbed of innovation and potential.",
   },
   {
     icon: Fire,
     title: "Leave with fire in your chest",
     description:
-      "This is a placeholder for the subtitle text and will describe the title aforementioned",
+      "You’ll leave not just inspired, but stirred to act — with fire in your chest.",
   },
 ];

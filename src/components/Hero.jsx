@@ -9,7 +9,7 @@ const Hero = () => {
       <img
         src={bg}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
       />
 
       <div className="absolute inset-0 z-10 flex flex-col h-80 max-lg:h-screen mt-30 max-lg:mt-25 justify-between p-[20px] md:p-[40px] lg:p-[100px]">
