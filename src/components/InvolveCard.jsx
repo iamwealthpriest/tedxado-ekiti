@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const InvolveCard = ({ header, text, btnText, btnClassName }) => {
+const InvolveCard = ({ header, text, btnText, btnClassName, link }) => {
   return (
     <div className="w-[332px] h-[282px] flex flex-col justify-between border border-white-20 rounded-md px-[34px] py-[40px]">
       <div className="flex flex-col gap-5 flex-grow">
@@ -9,7 +9,9 @@ const InvolveCard = ({ header, text, btnText, btnClassName }) => {
       </div>
 
       <div className="mb-0">
-        <Button text={btnText} className={`${btnClassName} text-base`} />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <Button text={btnText} className={`${btnClassName} text-base`} />
+        </a>
       </div>
     </div>
   );
