@@ -45,7 +45,7 @@ const SpeakerGallery = () => {
                     <h3 className="font-black text-center text-2xl font-bricolage leading-tight">
                       {speaker.name}
                     </h3>
-                    <p className="text-2xl font-thin font-hupaisa text-center">
+                    <p className="text-xl font-thin font-hupaisa text-center">
                       {speaker.position}
                     </p>
                   </>

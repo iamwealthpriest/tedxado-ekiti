@@ -8,7 +8,7 @@ import figma from "../assets/home/figma.svg";
 import microsoft from "../assets/home/microsoft.svg";
 import JD from "../assets/home/Jesudamilare.png";
 import femiA from "../assets/home/femi-aluko.png";
-import toyosiA from "../assets/home/toyosi-akerele.png";
+import simisolaA from "../assets/home/SimisolaA.png";
 import blessingD from "../assets/home/blessing-dada.png";
 import richardA from "../assets/home/richard-afahene.png";
 import lawrenceE from "../assets/home/lawrence-ekundayo.png";
@@ -85,23 +85,23 @@ export const SpeakerArray = [
     image: femiA,
   },
   {
-    name: "Toyosi Akerele",
-    position: "CEO, Chowdeck",
-    image: toyosiA,
+    name: "Awe Similoluwa",
+    position: "Lawyer",
+    image: simisolaA,
   },
   {
     name: "Blessing Dada",
-    position: "CEO, Chowdeck",
+    position: "Executive Director at Sarafacdi",
     image: blessingD,
   },
   {
     name: "Richard Afahene",
-    position: "Product Designer",
+    position: "Member, Toastmasters International",
     image: richardA,
   },
   {
     name: "Lawrence Ekundayo",
-    position: "Product designer",
+    position: "Founder, Raise a Farmer Initiative (RAFI)",
     image: lawrenceE,
   },
 ];
