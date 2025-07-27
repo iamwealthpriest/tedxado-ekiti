@@ -21,7 +21,7 @@ const SpeakerGallery = ({ comingSoon = false }) => {
         </h2>
       )}
 
-      <div className="flex flex-col sm:flex-row sm:items-center sm:overflow-x-auto gap-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center sm:overflow-x-auto gap-4">
         {SpeakerArray.map((speaker, index) => {
           const isActive = index === activeIndex;
           const showText = index === showTextIndex;
