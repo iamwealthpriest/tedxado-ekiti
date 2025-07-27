@@ -19,6 +19,7 @@ const PanelistView = () => {
               image={member.image}
               name={member.name}
               role={member.role}
+              comingSoon={true}
             />
           ))}
         </div>

@@ -35,15 +35,15 @@ const Countdown = () => {
 
   return (
     <div className="w-full flex items-center justify-center px-4 py-10">
-      <div className="w-full max-w-4xl bg-white/5 backdrop-blur-md rounded-3xl shadow-xl border border-white/10 px-6 py-10">
+      <div className="w-full max-w-4xl bg-white/5 backdrop-blur-md rounded-3xl shadow-xl border border-white/10 px-6 py-10 max-sm:px-4 max-sm:py-6">
         {eventStatus === "counting-down" && (
-          <div className="flex gap-6 flex-wrap justify-center">
+          <div className="flex gap-4 sm:gap-6 flex-row justify-center items-center flex-wrap">
             {["days", "hours", "minutes", "seconds"].map((unit) => (
               <div key={unit} className="flex flex-col items-center">
-                <div className="bg-white/10 text-red font-bricolage text-6xl md:text-7xl lg:text-8xl rounded-2xl shadow-lg px-6 py-4 w-[100px] h-[120px] flex items-center justify-center">
+                <div className="bg-white/10 text-red font-bricolage text-6xl sm:text-5xl max-sm:text-4xl rounded-2xl shadow-lg px-4 py-3 w-[90px] h-[110px] sm:w-[100px] sm:h-[120px] max-sm:w-[70px] max-sm:h-[90px] flex items-center justify-center">
                   {timeLeft[unit]?.toString().padStart(2, "0")}
                 </div>
-                <span className="mt-3 text-base md:text-lg lg:text-xl text-gray-400 font-hupaisa uppercase tracking-widest">
+                <span className="mt-2 text-sm sm:text-base text-gray-400 font-hupaisa uppercase tracking-widest">
                   {unit}
                 </span>
               </div>
@@ -52,13 +52,13 @@ const Countdown = () => {
         )}
 
         {eventStatus === "live" && (
-          <h2 className="text-6xl md:text-7xl text-red font-bricolage text-center">
+          <h2 className="text-5xl sm:text-6xl text-red font-bricolage text-center max-sm:text-3xl">
             🚨TEDxAdoEkiti is LIVE
           </h2>
         )}
 
         {eventStatus === "past" && (
-          <h2 className="text-4xl md:text-5xl text-white font-bricolage text-center">
+          <h2 className="text-4xl sm:text-5xl text-white font-bricolage text-center max-sm:text-2xl">
             {timeLeft.daysAgo} day{timeLeft.daysAgo > 1 ? "s" : ""} ago
           </h2>
         )}

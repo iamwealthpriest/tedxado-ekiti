@@ -17,8 +17,8 @@ const Home = () => {
       <Hero />
       <div className="p-[60px] bg-white/5 flex flex-col">
         <SponsorMarquee />
-        <div className="flex flex-row justify-between ">
-          <div className="flex flex-col max-lg:items-center w-[40%]">
+        <div className="flex flex-row justify-between max-lg:flex-col">
+          <div className="flex flex-col max-lg:items-center min-w-[40%]">
             <p className="text-4xl max-lg:text-3xl font-bold font-bricolage mt-5 flex flex-col max-lg:flex-row items-start max-lg:items-center gap-0 justify-center flex-wrap">
               Connecting Places:
               <span className="font-hupaisa items-center gap-1 flex-wrap justify-center flex">
@@ -60,7 +60,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center justify-center text-center w-[40%]">
+          <div className="flex items-center justify-center text-center min-w-[40%]">
             <EventCountdown targetDate="2025-09-20T00:00:00" />
           </div>
         </div>

@@ -19,7 +19,7 @@ const Voices = () => {
       </div>
       <div>
         <h1 className="heading-with-underline">Our Speakers</h1>
-        <SpeakerGallery />
+        <SpeakerGallery comingSoon={true} />
         <NavLink to="/speakers" className="flex items-center justify-center">
           <Button text="View all speakers" className="btn-orange" />
         </NavLink>
