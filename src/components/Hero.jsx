@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-[150vh] md:h-[120vh] overflow-hidden bg-black">
+    <div className="relative w-full h-[150vh] lg:h-[160vh] md:h-[120vh] overflow-hidden bg-black">
       <img
         src={bg}
         alt="Background"
