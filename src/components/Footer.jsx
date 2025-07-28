@@ -17,7 +17,12 @@ const Footer = () => {
           >
             Partnership
           </a>
-          <a href="/tickets" className="hover:text-white transition-colors">
+          <a
+            href="https://attendout.com/c/TedXAdoEkiti"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
             Tickets
           </a>
         </div>

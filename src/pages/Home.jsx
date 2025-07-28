@@ -50,7 +50,13 @@ const Home = () => {
               happens when you root your dreams in place
             </p>
             <div className="flex flex-row max-lg:justify-center w-full flex-wrap mt-10 gap-5">
-              <Button text="Get your tickets" className="btn-orange" />
+              <a
+                href="https://attendout.com/c/TedXAdoEkiti"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button text="Get your tickets" className="btn-orange" />
+              </a>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
                 target="_blank"

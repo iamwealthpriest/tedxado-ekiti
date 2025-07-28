@@ -20,17 +20,17 @@ export const homeTickets = [
   {
     name: "Regular",
     image: Regular,
-    link: "https://buytickets.com",
+    link: "https://attendout.com/c/TedXAdoEkiti",
   },
   {
     name: "VIP",
     image: VIP,
-    link: "https://buytickets.com",
+    link: "https://attendout.com/c/TedXAdoEkiti",
   },
   {
     name: "VVIP",
     image: VVIP,
-    link: "https://buytickets.com",
+    link: "https://attendout.com/c/TedXAdoEkiti",
   },
 ];
 
@@ -114,7 +114,7 @@ export const socialLinks = [
   },
   {
     name: "Whatsapp",
-    href: "https://chat.whatsapp.com/H3UsHi8bT34DEkMh1lLxVn",
+    href: "https://chat.whatsapp.com/Bx1o5wDPuXY5tSEpMKbUMR",
     icon: whatsappIcon,
   },
   {
@@ -138,7 +138,7 @@ export const faqData = [
   {
     question: "Where is the venue?",
     answer:
-      "The event will take place in the heart of Ado-Ekiti,Ekiti State, Nigeria. It is a space that reflects the spirit of this gathering: grounded, open, and full of possibility.",
+      "The venue is Obafemi Awolowo Civic Center, beside Jara Mall, Fajuyi, Ado-Ekiti",
   },
   {
     question: "What should I wear?",

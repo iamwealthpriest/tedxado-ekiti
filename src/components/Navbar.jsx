@@ -45,7 +45,13 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button text="Get your ticket" className="btn-orange" />
+            <a
+              href="https://attendout.com/c/TedXAdoEkiti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button text="Get your ticket" className="btn-orange" />
+            </a>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
               target="_blank"
@@ -81,8 +87,20 @@ const Navbar = () => {
           <NavLink to="/shop" className={navLinkStyle} onClick={closeMenu}>
             Shop
           </NavLink>
-          <Button text="Get your ticket" className="btn-orange w-full" />
-          <Button text="Partner with us" className="btn-black w-full" />
+          <a
+            href="https://attendout.com/c/TedXAdoEkiti"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button text="Get your ticket" className="btn-orange w-full" />
+          </a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button text="Partner with us" className="btn-black w-full" />
+          </a>
         </div>
       )}
     </nav>

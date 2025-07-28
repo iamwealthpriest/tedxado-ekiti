@@ -40,7 +40,14 @@ const Hero = () => {
             <p>Septemeber 20, 2025 | Ado-Ekiti, Nigeria</p>
           </div>
           <div className="flex flex-col md:flex-row lg:flex-row items-left justify-start gap-10 max-lg:gap-5 mt-10">
-            <Button text={`Get your ticket`} className="btn-orange" />
+            <a
+              href="https://attendout.com/c/TedXAdoEkiti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button text={`Get your ticket`} className="btn-orange" />
+            </a>
+
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
               target="_blank"

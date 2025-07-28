@@ -33,7 +33,13 @@ const Tickets = () => {
       </div>
 
       <div className="flex items-center justify-center mt-14">
-        <Button text="Get your ticket" className="btn-orange" />
+        <a
+          href="https://attendout.com/c/TedXAdoEkiti"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button text="Get your ticket" className="btn-orange" />
+        </a>
       </div>
     </div>
   );

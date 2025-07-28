@@ -5,6 +5,8 @@ import TEDxBg from "../assets/home/TEDx.png";
 import { NavLink } from "react-router-dom";
 
 const PanelistView = () => {
+  const comingSoon = true;
+
   return (
     <div className="px-[60px] max-lg:px-[20px] py-20">
       <h1 className="heading-with-underline">Our Panelists</h1>
@@ -19,14 +21,25 @@ const PanelistView = () => {
               image={member.image}
               name={member.name}
               role={member.role}
-              comingSoon={true}
+              comingSoon={comingSoon}
             />
           ))}
         </div>
       </div>
-      <NavLink to="/team" className="flex items-center justify-center">
-        <Button text="View all panelists" className="btn-orange" />
-      </NavLink>
+
+      {comingSoon ? (
+        <div className="flex items-center justify-center">
+          <Button
+            text="View all panelists"
+            className="btn-orange cursor-not-allowed"
+            disabled
+          />
+        </div>
+      ) : (
+        <NavLink to="/team" className="flex items-center justify-center">
+          <Button text="View all panelists" className="btn-orange" />
+        </NavLink>
+      )}
     </div>
   );
 };

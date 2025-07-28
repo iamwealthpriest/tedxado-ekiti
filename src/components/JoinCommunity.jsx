@@ -34,7 +34,7 @@ const JoinCommunitySection = () => {
         <div className="text-white text-sm sm:text-base">OR</div>
 
         <a
-          href="https://chat.whatsapp.com/H3UsHi8bT34DEkMh1lLxVn"
+          href="https://chat.whatsapp.com/Bx1o5wDPuXY5tSEpMKbUMR"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 font-hupaisa text-white text-[20px] font-light opacity-100 hover:opacity-80 py-[10px] px-[20px] border-b-2 border-r-2 rounded-md transition-all bg-dark-grey border-red w-90"
