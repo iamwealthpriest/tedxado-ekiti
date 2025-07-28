@@ -11,18 +11,21 @@ const GetInolved = () => {
           text="Be in the Room Where Ideas Ignite. Claim your seat and experience the power of live TEDx talks in Ado-Ekiti."
           btnText="Get your ticket"
           btnClassName="btn-orange"
+          link="https://attendout.com/c/TedXAdoEkiti"
         />
         <InvolveCard
           header="Partner"
           text="Fuel the Future with Us. Support a movement shaping minds, sparking innovation, and transforming our city."
           btnText="Partner with us"
           btnClassName="btn-black"
+          link="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
         />
         <InvolveCard
           header="Join the trybe"
           text="Find your people. Build the future. Join a circle of thinkers, doers, and dreamers of change."
           btnText="Join our community"
           btnClassName="btn-black"
+          link="https://chat.whatsapp.com/Bx1o5wDPuXY5tSEpMKbUMR"
         />
       </div>
     </div>

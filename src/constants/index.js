@@ -3,6 +3,108 @@ import twitterIcon from "../assets/xlogo.png";
 import linkedinIcon from "../assets/linkedinlogo.png";
 import youtubeIcon from "../assets/youtubelogo.png";
 import whatsappIcon from "../assets/whatsapplogo.png";
+import cocacola from "../assets/home/cocacola.svg";
+import figma from "../assets/home/figma.svg";
+import microsoft from "../assets/home/microsoft.svg";
+import JD from "../assets/home/Jesudamilare.png";
+import femiA from "../assets/home/femi-aluko.png";
+import simisolaA from "../assets/home/SimisolaA.png";
+import blessingD from "../assets/home/blessing-dada.png";
+import richardA from "../assets/home/richard-afahene.png";
+import lawrenceE from "../assets/home/lawrence-ekundayo.png";
+import Regular from "../assets/home/Regular.png";
+import VIP from "../assets/home/VIP.png";
+import VVIP from "../assets/home/VVIP.png";
+
+export const homeTickets = [
+  {
+    name: "Regular",
+    image: Regular,
+    link: "https://attendout.com/c/TedXAdoEkiti",
+  },
+  {
+    name: "VIP",
+    image: VIP,
+    link: "https://attendout.com/c/TedXAdoEkiti",
+  },
+  {
+    name: "VVIP",
+    image: VVIP,
+    link: "https://attendout.com/c/TedXAdoEkiti",
+  },
+];
+
+export const sponsors = [
+  {
+    name: "cocacola",
+    icon: cocacola,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "microsoft",
+    icon: microsoft,
+  },
+  {
+    name: "microsoft",
+    icon: microsoft,
+  },
+  {
+    name: "cocacola",
+    icon: cocacola,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "cocacola",
+    icon: cocacola,
+  },
+  {
+    name: "microsoft",
+    icon: microsoft,
+  },
+];
+
+export const SpeakerArray = [
+  {
+    name: "Jesudamilare Adesegun-David",
+    position: "CEO, Ennovate Lab",
+    image: JD,
+  },
+  {
+    name: "Femi Aluko",
+    position: "CEO, Chowdeck",
+    image: femiA,
+  },
+  {
+    name: "Awe Similoluwa",
+    position: "Lawyer",
+    image: simisolaA,
+  },
+  {
+    name: "Blessing Dada",
+    position: "Executive Director at Sarafacdi",
+    image: blessingD,
+  },
+  {
+    name: "Richard Afahene",
+    position: "Member, Toastmasters International",
+    image: richardA,
+  },
+  {
+    name: "Lawrence Ekundayo",
+    position: "Founder, Raise a Farmer Initiative (RAFI)",
+    image: lawrenceE,
+  },
+];
 
 export const socialLinks = [
   {
@@ -12,7 +114,7 @@ export const socialLinks = [
   },
   {
     name: "Whatsapp",
-    href: "https://chat.whatsapp.com/H3UsHi8bT34DEkMh1lLxVn",
+    href: "https://chat.whatsapp.com/Bx1o5wDPuXY5tSEpMKbUMR",
     icon: whatsappIcon,
   },
   {
@@ -36,7 +138,7 @@ export const faqData = [
   {
     question: "Where is the venue?",
     answer:
-      "The event will take place at The Pavilion, located in the heart of Ado-Ekiti, Ekiti State, Nigeria. It is a space that reflects the spirit of this gathering: grounded, open, and full of possibility.",
+      "The venue is Obafemi Awolowo Civic Center, beside Jara Mall, Fajuyi, Ado-Ekiti",
   },
   {
     question: "What should I wear?",
