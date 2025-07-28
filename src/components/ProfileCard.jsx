@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import ImageWrapper from "./ImageWrapper.jsx";
-import silhouette from "../assets/teams/omisore.png";
+import silhouette from "../assets/teams/laughter.png";
 
 const ProfileCard = ({ image, name, role, comingSoon = false }) => {
   const [scrambledName, setScrambledName] = useState("");
+  const [scrambledRole, setScrambledRole] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef(null);
 
@@ -30,8 +31,11 @@ const ProfileCard = ({ image, name, role, comingSoon = false }) => {
   useEffect(() => {
     if (!comingSoon || !isVisible) return;
 
-    let current = generateRandomString(8);
+    let current = generateRandomString(10);
     setScrambledName(current);
+
+    let newRole = generateRandomString(10);
+    setScrambledRole(newRole);
 
     const interval = setInterval(() => {
       current = current
@@ -53,12 +57,22 @@ const ProfileCard = ({ image, name, role, comingSoon = false }) => {
       ref={cardRef}
       className="flex flex-col relative overflow-hidden w-[403px] h-[559px]"
     >
-      <ImageWrapper image={image} alt={name} comingSoon={comingSoon} />
-      <div className="absolute left-13 bottom-0 flex flex-col gap-2 z-10">
+      <ImageWrapper
+        image={comingSoon ? silhouette : image}
+        alt={name}
+        comingSoon={comingSoon}
+      />
+      <div
+        className={`absolute left-13 bottom-0 flex flex-col gap-2 z-10 ${
+          comingSoon ? "blur-[2px]" : " "
+        }`}
+      >
         <p className="text-4xl text-white font-bricolage tracking-wider transition-all duration-300">
           {comingSoon ? scrambledName : name}
         </p>
-        <p className="text-white/70 text-xl font-hupaisa font-light">{role}</p>
+        <p className="text-white/70 text-xl font-hupaisa font-light">
+          {comingSoon ? scrambledRole : role}
+        </p>
       </div>
       {comingSoon && (
         <div className="absolute top-6 right-6 z-20">
