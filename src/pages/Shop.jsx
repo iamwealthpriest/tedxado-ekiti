@@ -1,6 +1,8 @@
 import JoinOurCommunity from "../components/JoinOurCommunity";
 import products from "../constants/Merch";
 import Button from '../components/Button';
+import { Link } from "react-router-dom";
+
 
 const Shop = () => {
     return (
@@ -42,24 +44,27 @@ const Shop = () => {
                                     />
                                 </div>
 
-                        {/* Product Info */}
-                        < div className="p-4 text-black" >
-                            <h3 className="font-bold text-lg mb-2">{product.name}</h3>
-                            <div className="flex items-center space-x-2 mb-4">
-                                <span className="text-xl font-bold">{product.price}</span>
-                                {product.originalPrice && product.originalPrice !== "₦" && (
-                                    <span className="text-gray-500 line-through">{product.originalPrice}</span>
-                                )}
+                                {/* Product Info */}
+                                < div className="p-4 text-black" >
+                                    <h3 className="font-bold text-lg mb-2">{product.name}</h3>
+                                    <div className="flex items-center space-x-2 mb-4">
+                                        <span className="text-xl font-bold">{product.price}</span>
+                                        {product.originalPrice && product.originalPrice !== "₦" && (
+                                            <span className="text-gray-500 line-through">{product.originalPrice}</span>
+                                        )}
+                                    </div>
+                                    <Link
+                                        to="https://wa.me/c/2348083087892"
+                                        className="block w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-md font-medium text-center transition-colors"
+                                    >
+                                        Buy now
+                                    </Link>
+                                </div>
                             </div>
-                            <button className="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-md font-medium transition-colors">
-                                Buy now
-                            </button>
-                        </div>
-                    </div>
                         ))}
-                </div>
+                    </div>
+                </div >
             </div >
-        </div >
             <JoinOurCommunity />
         </>
     )
