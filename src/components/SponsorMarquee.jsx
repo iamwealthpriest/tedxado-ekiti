@@ -38,7 +38,7 @@ const Marquee = () => {
   ).flat();
 
   return (
-    <div className="marquee-wrapper">
+    <div className="marquee-wrapper mb-10">
       <div className="marquee-fade-left" />
       <div className="marquee-fade-right" />
 
