@@ -4,22 +4,19 @@ import Button from "./Button";
 const JoinCommunitySection = () => {
   return (
     <section
-      className="w-full bg-cover bg-center bg-no-repeat flex flex-col items-start gap-5 text-white px-[60px] py-16 md:py-24"
+      className="w-full bg-cover bg-center bg-no-repeat flex flex-col items-start gap-5 text-white px-4 sm:px-6 md:px-[60px] py-12 md:py-24"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <h2 className="text-5xl font-light text-red">Join our community</h2>
-      <p className="text-xl text-white/90">
-        Be part of a growing network turning Ado-Ekiti into a beacon of
-        innovation and possibility.
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-red">Join our community</h2>
+      <p className="text-base sm:text-lg md:text-xl text-white/90">
+        Be part of a growing network turning Ado-Ekiti into a beacon of innovation and possibility.
       </p>
-      <p className="text-xl text-white/80">
-        We’re connecting dreamers, doers, and disruptors from deep roots to
-        distant horizons. If you <br />
-        believe transformation can start anywhere, start here.
+      <p className="text-base sm:text-lg md:text-xl text-white/80">
+        We’re connecting dreamers, doers, and disruptors from deep roots to distant horizons. If you believe transformation can start anywhere, start here.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
-        <div className="flex items-center bg-white/10 rounded-xl overflow-hidden w-full max-w-md">
+      <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-4 pt-4 w-full">
+        <div className="flex flex-col sm:flex-row items-stretch bg-white/10 rounded-xl w-full max-w-md">
           <input
             type="email"
             placeholder="Enter your email address"
@@ -27,7 +24,7 @@ const JoinCommunitySection = () => {
           />
           <Button
             text="Subscribe"
-            className="btn-orange text-[16px] py-[5px] px-[8px] border-b-2 border-r-2 rounded-md"
+            className="btn-orange text-[16px] py-[10px] mx-3 sm:mx-0 sm:px-[8px] mt-3 sm:mt-0 sm:ml-2 border-b-2 border-r-2 rounded-md"
           />
         </div>
 
@@ -37,7 +34,7 @@ const JoinCommunitySection = () => {
           href="https://chat.whatsapp.com/Bx1o5wDPuXY5tSEpMKbUMR"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 font-hupaisa text-white text-[20px] font-light opacity-100 hover:opacity-80 py-[10px] px-[20px] border-b-2 border-r-2 rounded-md transition-all bg-dark-grey border-red w-90"
+          className="flex items-center gap-2 text-[16px] font-hupaisa font-light py-[17px] px-[20px] border-b-2 border-r-2 rounded-md transition-all bg-dark-grey border-red w-full sm:w-auto"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
