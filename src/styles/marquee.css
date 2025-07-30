@@ -39,23 +39,30 @@
   }
 }
 
-/* Fade edges */
 .marquee-fade-left,
 .marquee-fade-right {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 80px;
-  z-index: 2;
-  pointer-events: none;
+  display: none;
 }
 
-.marquee-fade-left {
-  left: 0;
-  background: linear-gradient(to right, #0d0d0d, transparent);
-}
+@media screen and (min-width: 1024px) {
+  .marquee-fade-left,
+  .marquee-fade-right {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 2;
+    pointer-events: none;
+  }
 
-.marquee-fade-right {
-  right: 0;
-  background: linear-gradient(to left, #0d0d0d, transparent);
+  .marquee-fade-left {
+    left: 0;
+    background: linear-gradient(to right, #0d0d0d, transparent);
+  }
+
+  .marquee-fade-right {
+    right: 0;
+    background: linear-gradient(to left, #0d0d0d, transparent);
+  }
 }
