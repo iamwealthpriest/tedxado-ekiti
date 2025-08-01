@@ -12,6 +12,7 @@ import Shop from "./pages/Shop";
 function App() {
   return (
     <Router>
+
       <Toaster position="top-right" />
       <ScrollToTop />
       <Navbar />

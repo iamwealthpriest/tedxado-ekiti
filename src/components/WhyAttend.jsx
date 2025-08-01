@@ -9,7 +9,7 @@ const WhyAttend = () => {
       <div className="flex flex-col lg:flex-row gap-16 items-start">
         <div className="w-full lg:w-1/3">
           <h2 className="text-5xl font-bold font-bricolage leading-tight">
-            Why Attend <span className="text-red">TEDxAdoEkiti</span>
+            Why Attend <span className="text-red">TEDxAdoEkiti?</span>
           </h2>
         </div>
 
