@@ -18,6 +18,7 @@ const Shop = () => {
                     <Button
                         text="Place order"
                         className={`${"btn-orange"} text-base flex items-center gap-2 px-5 py-3`}
+                        link={"https://wa.me/c/2348083087892"}
                     />
                 </div>
 
@@ -51,9 +52,11 @@ const Shop = () => {
                                             <span className="text-gray-500 line-through">{product.originalPrice}</span>
                                         )}
                                     </div>
-                                    <button className="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-md font-medium transition-colors">
-                                        Buy now
-                                    </button>
+                                    <Button
+                                        text="Buy now"
+                                        link={product.link}
+                                        className="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-md font-medium transition-colors"
+                                    />
                                 </div>
                             </div>
                         ))}

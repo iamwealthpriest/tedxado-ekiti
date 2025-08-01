@@ -44,9 +44,9 @@ const Speakers = () => {
             <section className="bg-black px-6 py-16">
                 <div className="max-w-7xl mx-auto">
                     {/* Title with red underline */}
-                    <div className="mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white font-bricolage inline-block">Our Speakers</h2>
-                        <div className="w-24 md:w-80 h-1 bg-red-600 mt-2"></div>
+                    <div className="mb-8 sm:mb-12 text-left inline-block">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-bricolage">Our Speakers</h2>
+                        <div className="h-1 bg-red-600 mt-2"></div>
                     </div>
                     <div>
                         <SpeakerGallery comingSoon={comingSoon} />
@@ -71,10 +71,10 @@ const Speakers = () => {
 
             {/* Our Panelists Section */}
             <section>
-                <div className="bg-black py-10 sm:px-4">
-                    <div className="mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white font-bricolage inline-block">Our Panelists</h2>
-                        <div className="w-80 h-1 bg-red-600 mt-2"></div>
+                <div className="bg-black px-6 py-16">
+                    <div className="mb-8 sm:mb-12 text-left inline-block">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-bricolage">Our Panelists</h2>
+                        <div className="h-1 bg-red-600 mt-2"></div>
                     </div>
                     <div className="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                         {teamMembers.slice(0, 3).map((member, index) => (

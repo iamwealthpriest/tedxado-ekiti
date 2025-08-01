@@ -1,7 +1,33 @@
+import { toast } from "react-hot-toast";
 import bg from "../assets/home/Cta-bg.png";
 import Button from "./Button";
 
 const JoinCommunitySection = () => {
+  const handleSubmit = async () => {
+  const email = document.getElementById("email-input").value;
+
+  if (!email) {
+    toast.error("Enter an email address");
+    return;
+  }
+
+  try {
+    const url = `https://script.google.com/macros/s/AKfycbyYLrYIriTScAguOxMjq8TCnTdh2D6EtU0wGSBE47i_QxVpkF5X_KAY-03VJGxukD3aSA/exec?email=${encodeURIComponent(email)}`;
+    
+    const res = await fetch(url); // GET request
+    if (res.ok) {
+      toast.success("Email submitted successfully!");
+      document.getElementById("email-input").value = "";
+    } else {
+      toast.error("Failed to send email");
+    }
+  } catch (err) {
+    console.error("Fetch failed", err);
+    toast.error("Error sending request");
+  }
+};
+
+
   return (
     <section
       className="w-full bg-cover bg-center bg-no-repeat flex flex-col items-start gap-5 text-white px-4 sm:px-6 md:px-[60px] py-12 md:py-24"
@@ -20,10 +46,12 @@ const JoinCommunitySection = () => {
           <input
             type="email"
             placeholder="Enter your email address"
+            id="email-input"
             className="flex-1 px-4 py-3 bg-transparent text-white placeholder-white/60 focus:outline-none"
           />
           <Button
             text="Subscribe"
+            onClick={handleSubmit}
             className="btn-orange text-[16px] py-[10px] mx-3 sm:mx-0 sm:px-[8px] mt-3 sm:mt-0 sm:ml-2 border-b-2 border-r-2 rounded-md"
           />
         </div>
