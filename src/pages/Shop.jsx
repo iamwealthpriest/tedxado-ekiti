@@ -1,4 +1,4 @@
-import JoinOurCommunity from "../components/JoinOurCommunity";
+import JoinCommunity from "../components/JoinCommunity";
 import products from "../constants/Merch";
 import Button from '../components/Button';
 
@@ -18,6 +18,7 @@ const Shop = () => {
                     <Button
                         text="Place order"
                         className={`${"btn-orange"} text-base flex items-center gap-2 px-5 py-3`}
+                        link={"https://wa.me/c/2348083087892"}
                     />
                 </div>
 
@@ -42,25 +43,29 @@ const Shop = () => {
                                     />
                                 </div>
 
-                        {/* Product Info */}
-                        < div className="p-4 text-black" >
-                            <h3 className="font-bold text-lg mb-2">{product.name}</h3>
-                            <div className="flex items-center space-x-2 mb-4">
-                                <span className="text-xl font-bold">{product.price}</span>
-                                {product.originalPrice && product.originalPrice !== "₦" && (
-                                    <span className="text-gray-500 line-through">{product.originalPrice}</span>
-                                )}
+                                {/* Product Info */}
+                                < div className="p-4 text-black" >
+                                    <h3 className="font-bold text-lg mb-2">{product.name}</h3>
+                                    <div className="flex items-center space-x-2 mb-4">
+                                        <span className="text-xl font-bold">{product.price}</span>
+                                        {product.originalPrice && product.originalPrice !== "₦" && (
+                                            <span className="text-gray-500 line-through">{product.originalPrice}</span>
+                                        )}
+                                    </div>
+                                    <Button
+                                        text="Buy now"
+                                        link={product.link}
+                                        className="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-md font-medium transition-colors"
+                                    />
+                                </div>
                             </div>
-                            <button className="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-md font-medium transition-colors">
-                                Buy now
-                            </button>
-                        </div>
-                    </div>
                         ))}
-                </div>
+                    </div>
+                </div >
             </div >
-        </div >
-            <JoinOurCommunity />
+            <section className="bg-black">
+                <JoinCommunity />
+            </section>
         </>
     )
 }

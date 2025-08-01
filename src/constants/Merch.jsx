@@ -13,6 +13,7 @@ const products = [
       originalPrice: "₦7,000",
       discount: "-40%",
       image: TShirt,
+      link:  "https://wa.me/p/23906657172330181/2348083087892"
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ const products = [
       originalPrice: "₦16,500",
       discount: "-40%",
       image: Hoodie,
+      link:  "https://wa.me/p/30455007974145877/2348083087892"
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ const products = [
       originalPrice: "₦16,500",
       discount: "-40%",
       image: Sweatshirt,
+      link:  "https://wa.me/p/24805698129030825/2348083087892"
     },
     {
       id: 4,
@@ -37,6 +40,7 @@ const products = [
       originalPrice: "₦8,000",
       discount: "-40%",
       image: BucketHat,
+      link:  "https://wa.me/p/24372175095739449/2348083087892"
     },
     {
       id: 5,
@@ -45,6 +49,7 @@ const products = [
       originalPrice: "₦5,000",
       discount: "-40%",
       image: ToteBag,
+      link:  "https://wa.me/p/9952836868147887/2348083087892"
     },
     {
       id: 6,
@@ -53,6 +58,7 @@ const products = [
       originalPrice: "₦2000",
       discount: "-40%",
       image: Jotter,
+      link:  "https://wa.me/p/24309113752052090/2348083087892"
     }
   ];
 
