@@ -16,7 +16,7 @@ const Home = () => {
     <section className="w-full text-white bg-black">
       <Hero />
       <div className="p-[60px] bg-white/5 flex flex-col">
-        <SponsorMarquee />
+        {/* <SponsorMarquee /> */}
         <div className="flex flex-row justify-between max-lg:flex-col">
           <div className="flex flex-col max-lg:items-center min-w-[40%]">
             <p className="text-4xl max-lg:text-3xl font-bold font-bricolage mt-5 flex flex-col max-lg:flex-row items-start max-lg:items-center gap-0 justify-center flex-wrap">
