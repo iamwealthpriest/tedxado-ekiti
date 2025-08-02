@@ -18,11 +18,11 @@ const Speakers = () => {
         ></div>
 
         {/* Content Overlay */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 py-16 md:py-24">
-          <h3 className="text-3xl md:text-5xl my-12 md:my-20 font-bold font-bricolage">
+        <div className="relative z-10 mx-auto text-center px-4 sm:px-6 py-16 md:py-24">
+          <h3 className="text-3xl md:text-5xl lg:mt-[20vh] lg:mb-5 max-lg:mt-20 max-lg:mb-5 font-bold font-bricolage">
             Meet the Voices
           </h3>
-          <p className="text-gray-300 text-base md:text-xl font-light leading-relaxed space-y-4">
+          <p className="text-3xl px-33 md:text-2xl lg:text-2xl">
             For years, Ekiti has been called quiet. Remote. Passed over. But we
             see it differently. We see a seedbed.
             <br />
@@ -33,10 +33,12 @@ const Speakers = () => {
             <br />
             TEDxAdoEkiti is more than an event. It is a signal. A shift. A
             chance to make the world look again. At Ekiti. At overlooked places.
+            <br />
             At people who stayed.
-          </p>
-          <p className="text-red-500 font-medium text-base text-[24px] mt-8">
-            Because here in this dry land, something fertile is rising
+            <br />
+            <span className="text-red font-medium text-base text-[24px] mt-8">
+              Because here in this dry land, something fertile is rising
+            </span>
           </p>
         </div>
       </section>
