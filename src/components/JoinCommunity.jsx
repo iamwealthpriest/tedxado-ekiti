@@ -4,41 +4,47 @@ import Button from "./Button";
 
 const JoinCommunitySection = () => {
   const handleSubmit = async () => {
-  const email = document.getElementById("email-input").value;
+    const email = document.getElementById("email-input").value;
 
-  if (!email) {
-    toast.error("Enter an email address");
-    return;
-  }
-
-  try {
-    const url = `https://script.google.com/macros/s/AKfycbyYLrYIriTScAguOxMjq8TCnTdh2D6EtU0wGSBE47i_QxVpkF5X_KAY-03VJGxukD3aSA/exec?email=${encodeURIComponent(email)}`;
-    
-    const res = await fetch(url); // GET request
-    if (res.ok) {
-      toast.success("Email submitted successfully!");
-      document.getElementById("email-input").value = "";
-    } else {
-      toast.error("Failed to send email");
+    if (!email) {
+      toast.error("Enter an email address");
+      return;
     }
-  } catch (err) {
-    console.error("Fetch failed", err);
-    toast.error("Error sending request");
-  }
-};
 
+    try {
+      const url = `https://script.google.com/macros/s/AKfycbyYLrYIriTScAguOxMjq8TCnTdh2D6EtU0wGSBE47i_QxVpkF5X_KAY-03VJGxukD3aSA/exec?email=${encodeURIComponent(
+        email
+      )}`;
+
+      const res = await fetch(url); // GET request
+      if (res.ok) {
+        toast.success("Email submitted successfully!");
+        document.getElementById("email-input").value = "";
+      } else {
+        toast.error("Failed to subscribe. Check network and try again");
+      }
+    } catch (err) {
+      console.error("Fetch failed", err);
+      toast.error("Error sending request");
+    }
+  };
 
   return (
     <section
       className="w-full bg-cover bg-center bg-no-repeat flex flex-col items-start gap-5 text-white px-4 sm:px-6 md:px-[60px] py-12 md:py-24"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-red">Join our community</h2>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-red">
+        Join our community
+      </h2>
       <p className="text-base sm:text-lg md:text-xl text-white/90">
-        Be part of a growing network turning Ado-Ekiti into a beacon of innovation and possibility.
+        Be part of a growing network turning Ado-Ekiti into a beacon of
+        innovation and possibility.
       </p>
       <p className="text-base sm:text-lg md:text-xl text-white/80">
-        We’re connecting dreamers, doers, and disruptors from deep roots to distant horizons. If you believe transformation can start anywhere, start here.
+        We’re connecting dreamers, doers, and disruptors from deep roots to
+        distant horizons. If you believe transformation can start anywhere,
+        start here.
       </p>
 
       <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-4 pt-4 w-full">
