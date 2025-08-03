@@ -24,7 +24,11 @@ const FAQAccordion = ({ question, answer }) => {
         >
           {question}
         </span>
-        {isOpen ? <img src={dropdown2} /> : <img src={dropdown} />}
+        {isOpen ? (
+          <img src={dropdown2} alt="Close drop-down icon" />
+        ) : (
+          <img src={dropdown} alt="Open drop-down icon" />
+        )}
       </button>
 
       <div
