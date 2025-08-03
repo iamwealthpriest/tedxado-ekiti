@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import bg from "../assets/home/homebg.png";
+import bg from "../assets/home/bg.webp";
 import svg from "../assets/teams/Group.svg";
 import Button from "./Button";
 
@@ -9,7 +9,7 @@ const Hero = () => {
       <img
         src={bg}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover opacity-50 z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
       />
 
       <div className="absolute inset-0 z-10 flex flex-col h-80 max-lg:h-screen mt-30 max-lg:mt-25 justify-between p-[20px] md:p-[40px] lg:p-[100px]">
@@ -39,13 +39,16 @@ const Hero = () => {
             </p>
             <p>Septemeber 20, 2025 | Ado-Ekiti, Nigeria</p>
           </div>
-          <div className="flex flex-col md:flex-row lg:flex-row items-left justify-start gap-10 max-lg:gap-5 mt-10">
+          <div className="w-full flex flex-col md:flex-row lg:flex-row items-left justify-start gap-10 max-lg:gap-5 mt-10">
             <a
               href="https://attendout.com/c/TedXAdoEkiti"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button text={`Get your ticket`} className="btn-orange" />
+              <Button
+                text={`Get your ticket`}
+                className="btn-orange max-lg:w-full"
+              />
             </a>
 
             <a
@@ -53,7 +56,10 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button text="Partner with us" className="btn-black" />
+              <Button
+                text="Partner with us"
+                className="btn-black max-lg:w-full"
+              />
             </a>
           </div>
         </div>
@@ -63,7 +69,7 @@ const Hero = () => {
           <h1 className="font-bricolage font-bold text-3xl md:text-4xl lg:text-7xl mb-3 text-red">
             Why TEDx in Ekiti?
           </h1>
-          <p className="text-xl md:text-2xl lg:text-2xl">
+          <p className="text-xl leading-10 md:text-2xl lg:text-2xl">
             For years, Ekiti has been called quiet. Remote. Passed over. But we
             see it differently. We see a seedbed.
             <br />

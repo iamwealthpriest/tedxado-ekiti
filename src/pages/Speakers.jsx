@@ -5,12 +5,18 @@ import SpeakerGallery from "../components/SpeakerGallery";
 import Button from "../components/Button";
 import ellipse from "../assets/speakers/Ellipse.png";
 import { NavLink } from "react-router-dom";
+import SEO from "../components/SEO";
 
 const Speakers = () => {
   const comingSoon = true;
 
   return (
     <>
+      <SEO
+        title="Speakers | TEDxAdo-Ekiti 2025"
+        description="Meet the visionary speakers of TEDxAdo-Ekiti 2025. Changemakers in tech, law, farming, and activism shaping Nigeria's future from Ekiti."
+      />
+
       {/* Hero Section */}
       <section className="min-h-screen w-full bg-black text-white relative overflow-hidden">
         {/* Background Image */}

@@ -1,10 +1,16 @@
 import JoinCommunity from "../components/JoinCommunity";
 import products from "../constants/Merch";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
 
 const Shop = () => {
   return (
     <>
+      <SEO
+        title="Shop TEDxAdo-Ekiti Merch | Support the Movement"
+        description="Get official TEDxAdo-Ekiti 2025 merch. Rep the vision, support the cause, and wear something that means something."
+      />
+
       <div className="bg-black text-white min-h-screen">
         {/* Header Section */}
         <div className="relative z-3 max-w-4xl mx-10 lg:mt-20 text-left px-2 py-24">
