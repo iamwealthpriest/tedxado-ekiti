@@ -9,7 +9,7 @@ const Hero = () => {
       <img
         src={bg}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0 brightness-0 saturate-150"
       />
 
       <div className="absolute inset-0 z-10 flex flex-col h-80 max-lg:h-screen mt-30 max-lg:mt-25 justify-between p-[20px] md:p-[40px] lg:p-[100px]">
@@ -32,7 +32,7 @@ const Hero = () => {
               to Horizons
             </span>
           </h1>
-          <div className="text-xl md:text-2xl lg:text-3xl mt-7 px-5 py-3 bg-orange/5 border-l-5 border-red max-w-[950px]">
+          <div className="text-xl md:text-2xl lg:text-3xl mt-7 px-5 py-3 bg-orange/20 border-l-5 border-red max-w-[950px]">
             <p>
               A one-day gathering of thinkers, dreamers and builders live in
               Ado-Ekiti
