@@ -20,12 +20,12 @@ import DeborahA from "../assets/home/Ajiboye.jpg";
 export const heroTeam = [
   {
     name: "Laughter Atanda",
-    role: "Organizer",
+    role: "Licensee",
     image: LaughterA,
   },
   {
     name: "Victor Wave",
-    role: "Co-Organizer",
+    role: "Co-Licensee",
     image: VictorW,
   },
   {
@@ -43,12 +43,12 @@ export const heroTeam = [
 export const teamMembers = [
   {
     name: "Laughter Atanda",
-    role: "Organizer",
+    role: "Licensee",
     image: Laughter,
   },
   {
     name: "Victor Wave",
-    role: "Co-Organizer",
+    role: "Co-Licensee",
     image: Victor,
   },
   {
