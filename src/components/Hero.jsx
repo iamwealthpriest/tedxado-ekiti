@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     <section className="w-full bg-black text-white pb-15 px-5 pt-[180px] max-lg:pt-[180px] lg:px-24 flex flex-col gap-20">
       <div className="flex flex-col gap-8">
+        {/* Cosmetic addition for testing */}
         <h1 className="font-bricolage font-bold text-3xl md:text-4xl lg:text-7xl">
           <span className="red-text">TEDx</span>Ado-Ekiti
         </h1>
