@@ -1,5 +1,5 @@
 import { toast } from "react-hot-toast";
-import bg from "../assets/home/Cta-bg.png";
+import bg from "../assets/Community-bg.webp";
 import Button from "./Button";
 
 const JoinCommunitySection = () => {
@@ -47,7 +47,7 @@ const JoinCommunitySection = () => {
         start here.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-start items-start sm:items-center gap-4 pt-4 w-full">
+      <div className="flex flex-row max-lg:flex-col justify-start items-center max-lg:items-center gap-4 pt-4 w-full">
         <div className="flex flex-col sm:flex-row items-stretch bg-white/10 rounded-xl w-full max-w-md">
           <input
             type="email"
@@ -68,7 +68,7 @@ const JoinCommunitySection = () => {
           href="https://chat.whatsapp.com/Bx1o5wDPuXY5tSEpMKbUMR"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-[16px] font-hupaisa font-light py-[17px] px-[20px] border-b-2 border-r-2 rounded-md transition-all bg-dark-grey border-red w-full sm:w-auto"
+          className="flex items-center justify-center gap-2 text-[16px] font-hupaisa font-light py-[17px] px-[20px] border-b-2 border-r-2 rounded-md transition-all bg-dark-grey border-red w-full sm:w-auto"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
