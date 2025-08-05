@@ -14,14 +14,14 @@ const SpeakerGallery = ({ comingSoon = false }) => {
   }, [activeIndex]);
 
   return (
-    <div className="w-full px-4 py-8">
+    <div className="w-full py-8">
       {comingSoon && (
-        <h2 className="text-5xl text-center font-extrabold text-red font-bricolage uppercase tracking-widest mb-8 animate-pulse">
+        <h2 className="text-4xl text-start font-extrabold text-red font-bricolage uppercase tracking-widest mb-8 animate-pulse">
           Anticipate!
         </h2>
       )}
 
-      <div className="flex flex-col sm:flex-row items-center justify-center sm:overflow-x-auto gap-4">
+      <div className="flex px-4 flex-col sm:flex-row items-center justify-center sm:overflow-x-auto gap-4">
         {SpeakerArray.map((speaker, index) => {
           const isActive = index === activeIndex;
           const showText = index === showTextIndex;

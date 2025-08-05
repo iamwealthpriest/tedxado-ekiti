@@ -24,7 +24,7 @@ const Home = () => {
       <section className="w-full text-white bg-black">
         <Hero />
 
-        <div className="p-[60px] bg-white/5 flex flex-col">
+        <div className="p-[60px] max-lg:p-5 bg-white/5 flex flex-col">
           <div className="flex flex-row justify-between max-lg:flex-col">
             <div className="flex flex-col max-lg:items-center min-w-[40%]">
               <p className="text-4xl max-lg:text-3xl font-bold font-bricolage mt-5 flex flex-col max-lg:flex-row items-start max-lg:items-center gap-0 justify-center flex-wrap">
@@ -43,7 +43,8 @@ const Home = () => {
                 </span>
               </p>
 
-              <p className="text-2xl max-lg:text-center font-hupaisa mt-5">
+              {/* for desktop */}
+              <p className="text-2xl lg:flex max-lg:hidden max-lg:text-center font-hupaisa mt-5">
                 This is not just a theme. It is a path. <br />
                 We are learning to stop fleeing where we came from and <br />
                 begin building from it. <br />
@@ -53,20 +54,35 @@ const Home = () => {
                 happens when you root your dreams in place.
               </p>
 
-              <div className="flex flex-row max-lg:justify-center w-full flex-wrap mt-10 gap-5">
+              <p className="text-2xl max-lg:flex lg:hidden leading-10 max-lg:text-center font-hupaisa mt-5">
+                This is not just a theme. It is a path. We are learning to stop
+                fleeing where we came from and begin building from it. To see
+                small cities not as detours, but as destinations. To see our
+                memories not as baggage, but as blueprint. This theme holds a
+                promise: that something powerful happens when you root your
+                dreams in place.
+              </p>
+
+              <div className="flex flex-row max-lg:flex-col max-lg:justify-center w-full flex-wrap mt-10 gap-5">
                 <a
                   href="https://attendout.com/c/TedXAdoEkiti"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button text="Get your tickets" className="btn-orange" />
+                  <Button
+                    text="Get your tickets"
+                    className="btn-orange max-lg:w-full"
+                  />
                 </a>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdkWuXtdkrJaSd-fWJq6qIYdUbIXCO2lN18_Rpg87TV-OjVqg/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button text="Partner with us" className="btn-black" />
+                  <Button
+                    text="Partner with us"
+                    className="btn-black max-lg:w-full"
+                  />
                 </a>
               </div>
             </div>

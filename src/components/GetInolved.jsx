@@ -4,7 +4,7 @@ import InvolveCard from "./InvolveCard";
 const GetInolved = () => {
   return (
     <div className="py-[150px] mx-[100px] flex flex-col gap-[50px] items-center">
-      <h2>Get Involved</h2>
+      <h2 className="text-center">Get Involved</h2>
       <div className="flex flex-row flex-wrap gap-[20px]">
         <InvolveCard
           header="Attend"

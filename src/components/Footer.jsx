@@ -33,13 +33,13 @@ const Footer = () => {
             mail.tedxekiti@gmail.com
           </a>
           <a
-            href="tel:+2348160812613"
+            href="https://wa.me/2348160812613"
             className="hover:text-white transition-colors"
           >
             +2348160812613
           </a>
           <a
-            href="tel:+2348072101662"
+            href="https://wa.me/2348072101662"
             className="hover:text-white transition-colors"
           >
             +2348072101662

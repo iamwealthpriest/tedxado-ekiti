@@ -3,7 +3,7 @@ import { teamMembers } from "../constants/team";
 import JoinCommunity from "../components/JoinCommunity";
 import SpeakerGallery from "../components/SpeakerGallery";
 import Button from "../components/Button";
-import ellipse from "../assets/speakers/Ellipse.png";
+import ellipse from "../assets/speakers/Ellipse.webp";
 import { NavLink } from "react-router-dom";
 import SEO from "../components/SEO";
 
@@ -22,7 +22,7 @@ const Speakers = () => {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-70"
-          style={{ backgroundImage: "url('/src/assets/backdrop.png')" }}
+          style={{ backgroundImage: "url('/src/assets/backdrop.webp')" }}
         ></div>
 
         {/* Ellipse Full Overlay */}
@@ -34,10 +34,29 @@ const Speakers = () => {
 
         {/* Text Content */}
         <div className="relative z-20 mx-auto text-center px-4 sm:px-6 py-16 md:py-24">
-          <h3 className="text-3xl md:text-5xl lg:mt-[20vh] lg:mb-5 max-lg:mt-20 max-lg:mb-5 font-bold font-bricolage">
+          <h1 className="text-5xl lg:mt-[20vh] lg:mb-5 max-lg:mt-20 max-lg:mb-5 font-bold font-bricolage">
             Meet the Voices
-          </h3>
-          <p className="text-3xl px-33 md:text-2xl lg:text-2xl">
+          </h1>
+          <p className="text-3xl lg:flex max-lg:hidden flex-col leading-12 px-33 md:text-2xl lg:text-2xl">
+            For years, Ekiti has been called quiet. Remote. Passed over. But we
+            see it differently. We see a seedbed.
+            <br />
+            We believe ideas don’t only come from capital cities. That
+            brilliance isn’t bound by traffic lights or skyscrapers. That the
+            places we come from still hold the power to shape where we are
+            going.
+            <br />
+            TEDxAdoEkiti is more than an event. It is a signal. A shift. A
+            chance to make the world look again. At Ekiti. At overlooked places.
+            <br />
+            At people who stayed.
+            <br />
+            <span className="text-red font-medium text-base text-[24px] mt-8">
+              Because here in this dry land, something fertile is rising
+            </span>
+          </p>
+
+          <p className="text-3xl max-lg:flex flex-col lg:hidden px-5 md:text-2xl lg:text-2xl">
             For years, Ekiti has been called quiet. Remote. Passed over. But we
             see it differently. We see a seedbed.
             <br />

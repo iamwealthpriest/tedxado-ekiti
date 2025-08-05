@@ -4,7 +4,7 @@ import HeroTeamCarousel from "./HeroTeam";
 
 const MeetTheTeam = () => {
   return (
-    <div className="flex flex-col px-[60px] py-10">
+    <div className="flex flex-col px-[30px] py-10">
       <div className="flex flex-row max-lg:flex-col justify-between items-center max-lg:items-start">
         <h1 className="red-text text-5xl font-bricolage font-light">
           Meet the team

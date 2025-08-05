@@ -1,4 +1,4 @@
-import about from "../assets/about.png";
+import about from "../assets/about.webp";
 import AboutTEDx from "../components/AboutTEDx";
 import FAQSection from "../components/FAQSection";
 import GetInolved from "../components/GetInolved";
@@ -20,7 +20,7 @@ const About = () => {
             className="w-full h-full object-cover bg-faint-red"
           />
 
-          <h1 className="absolute left-8 top-1/4 -translate-y-1/2 font-bricolage text-5xl font-bold">
+          <h1 className="absolute left-8 max-lg:top-2/4 top-1/4 -translate-y-1/2 font-bricolage text-5xl font-bold">
             About Us
           </h1>
         </div>

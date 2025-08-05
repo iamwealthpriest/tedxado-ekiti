@@ -16,7 +16,7 @@ const FAQSection = () => {
         alt="Main background"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
-      <div className="relative z-20 h-full w-full flex  items-center flex-col gap-7 justify-center px-10 md:px-20">
+      <div className="relative z-20 h-full w-full flex  items-center flex-col gap-7 justify-center px-10 max-lg:px-5 md:px-20">
         <h2>FAQs</h2>
         <div className="w-full flex flex-col gap-[15px] items-center">
           {faqData.map((item, idx) => (

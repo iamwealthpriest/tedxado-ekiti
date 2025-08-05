@@ -12,9 +12,9 @@ import simisolaA from "../assets/home/SimisolaA.png";
 import blessingD from "../assets/home/blessing-dada.png";
 import richardA from "../assets/home/richard-afahene.png";
 import lawrenceE from "../assets/home/lawrence-ekundayo.png";
-import Regular from "../assets/home/Regular.png";
-import VIP from "../assets/home/VIP.png";
-import VVIP from "../assets/home/VVIP.png";
+import Regular from "../assets/home/Regular.webp";
+import VIP from "../assets/home/VIP.webp";
+import VVIP from "../assets/home/VVIP.webp";
 
 export const homeTickets = [
   {
