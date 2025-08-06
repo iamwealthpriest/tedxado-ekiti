@@ -17,8 +17,8 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="TEDxAdo-Ekiti 2025 | Global Ideas. Local Voices."
-        description="Join TEDxAdo-Ekiti 2025, an idea-packed experience spotlighting bold voices from Ekiti, Nigeria. Discover speakers, grab tickets, and be part of the movement."
+        title="TEDxAdo-Ekiti 2025 | Connecting Places: Roots to Horizons"
+        description="A one-day gathering of thinkers, dreamers and builders live in Ado-Ekiti "
       />
 
       <section className="w-full text-white bg-black">
@@ -100,10 +100,10 @@ const Home = () => {
         >
           <Voices />
           <PanelistView />
-          <FAQSection />
           <Tickets />
           <WhyAttend />
           <MeetTheTeam />
+          <FAQSection />
           <JoinCommunitySection />
         </Suspense>
       </section>
