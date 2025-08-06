@@ -13,8 +13,8 @@ const Speakers = () => {
   return (
     <>
       <SEO
-        title="Speakers | TEDxAdo-Ekiti 2025"
-        description="Meet the visionary speakers of TEDxAdo-Ekiti 2025. Changemakers in tech, law, farming, and activism shaping Nigeria's future from Ekiti."
+        title="Speakers | Meet the Voices of TEDxAdo-Ekiti 2025"
+        description="From visionaries rooted in Ekiti to pioneers reimagining the overlooked, our speakers are more than storytellers. They are builders of possibility. Each one brings insight, urgency, and the fire of lived experience. They speak not just to be heard, but to move minds, hearts, and horizons."
       />
 
       {/* Hero Section */}
@@ -23,7 +23,7 @@ const Speakers = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-70"
           style={{ backgroundImage: "url('/src/assets/backdrop.webp')" }}
-        ></div>
+        />
 
         {/* Ellipse Full Overlay */}
         <img
@@ -32,48 +32,21 @@ const Speakers = () => {
           className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none brightness-125"
         />
 
-        {/* Text Content */}
-        <div className="relative z-20 mx-auto text-center px-4 sm:px-6 py-16 md:py-24">
-          <h1 className="text-5xl lg:mt-[20vh] lg:mb-5 max-lg:mt-20 max-lg:mb-5 font-bold font-bricolage">
-            Meet the Voices
-          </h1>
-          <p className="text-3xl lg:flex max-lg:hidden flex-col leading-12 px-33 md:text-2xl lg:text-2xl">
-            For years, Ekiti has been called quiet. Remote. Passed over. But we
-            see it differently. We see a seedbed.
-            <br />
-            We believe ideas don’t only come from capital cities. That
-            brilliance isn’t bound by traffic lights or skyscrapers. That the
-            places we come from still hold the power to shape where we are
-            going.
-            <br />
-            TEDxAdoEkiti is more than an event. It is a signal. A shift. A
-            chance to make the world look again. At Ekiti. At overlooked places.
-            <br />
-            At people who stayed.
-            <br />
-            <span className="text-red font-medium text-base text-[24px] mt-8">
-              Because here in this dry land, something fertile is rising
-            </span>
-          </p>
+        {/* Text Content - centered */}
+        <div className="relative z-20 flex min-h-screen items-center justify-center px-4 sm:px-6">
+          <div className="text-center max-w-3xl">
+            <h1 className="text-5xl font-bold font-bricolage">
+              Meet the Voices
+            </h1>
 
-          <p className="text-3xl max-lg:flex flex-col lg:hidden px-5 md:text-2xl lg:text-2xl">
-            For years, Ekiti has been called quiet. Remote. Passed over. But we
-            see it differently. We see a seedbed.
-            <br />
-            We believe ideas don’t only come from capital cities. That
-            brilliance isn’t bound by traffic lights or skyscrapers. That the
-            places we come from still hold the power to shape where we are
-            going.
-            <br />
-            TEDxAdoEkiti is more than an event. It is a signal. A shift. A
-            chance to make the world look again. At Ekiti. At overlooked places.
-            <br />
-            At people who stayed.
-            <br />
-            <span className="text-red font-medium text-base text-[24px] mt-8">
-              Because here in this dry land, something fertile is rising
-            </span>
-          </p>
+            <p className="mt-6 text-base sm:text-xl px-5 leading-relaxed">
+              From visionaries rooted in Ekiti to pioneers reimagining the
+              overlooked, our speakers are more than storytellers. They are
+              builders of possibility. Each one brings insight, urgency, and the
+              fire of lived experience. They speak not just to be heard, but to
+              move minds, hearts, and horizons.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -84,7 +57,7 @@ const Speakers = () => {
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-bricolage">
               Our Speakers
             </h2>
-            <div className="h-1 bg-red-600 mt-2"></div>
+            <div className="h-1 bg-red-600 mt-2" />
           </div>
           <div>
             <SpeakerGallery comingSoon={comingSoon} />
@@ -99,8 +72,9 @@ const Speakers = () => {
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-bricolage">
               Our Panelists
             </h2>
-            <div className="h-1 bg-red-600 mt-2"></div>
+            <div className="h-1 bg-red-600 mt-2" />
           </div>
+
           <div className="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {teamMembers.slice(0, 3).map((member, index) => (
               <ProfileCard
@@ -112,8 +86,9 @@ const Speakers = () => {
               />
             ))}
           </div>
+
           {comingSoon ? (
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mt-8">
               <Button
                 text="View all panelists"
                 className="btn-orange cursor-not-allowed"

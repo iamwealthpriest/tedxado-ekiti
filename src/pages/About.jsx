@@ -8,8 +8,8 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About TEDxAdo-Ekiti | Why We Exist"
-        description="TEDxAdo-Ekiti isn't just an event. It's a spark. Learn about our mission to spotlight untold stories and overlooked brilliance from Ekiti to the world."
+        title="About TEDxAdo-Ekiti | Global ideas. Local voices."
+        description="TEDx is a global movement rooted in the simple yet powerful belief that ideas can spark change in a room, a city, or the world. While TED began as a conference for Technology, Entertainment, and Design, it has grown into a global platform for ideas worth spreading."
       />
 
       <section className="min-h-screen w-full bg-black text-white lg:mt-20">

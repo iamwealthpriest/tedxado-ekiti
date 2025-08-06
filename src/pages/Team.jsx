@@ -9,7 +9,7 @@ const Team = () => {
     <>
       <SEO
         title="Meet the Team | TEDxAdo-Ekiti Organizers"
-        description="Passionate volunteers, creative minds, and relentless doers. Get to know the team bringing TEDxAdo-Ekiti 2025 to life."
+        description="Meet the team weaving stories, purpose, and possibilities across generations and geographies."
       />
 
       <section className="min-h-screen w-full bg-black text-white pt-20">

@@ -20,10 +20,9 @@ const Voices = () => {
         </p>
 
         <p className="text-xl max-lg:flex lg:hidden leading-10">
-          We're bringing together the most audacious thinkers, doers and
-          investors in African tech, working on everything from fintech to
-          commerce, renewable energy, climate change, tech policy, AI, telco,
-          cloud and more.
+          They are builders of possibility. Each one brings insight, urgency,
+          and the fire of lived experience. Geared to move minds, hearts and
+          horizons.
         </p>
       </div>
 
