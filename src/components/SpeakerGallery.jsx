@@ -44,7 +44,7 @@ const SpeakerGallery = ({ comingSoon = false }) => {
                 alt={speaker.name}
                 className={`w-full h-full object-cover ${
                   comingSoon
-                    ? "brightness-0 contrast-150 saturate-0"
+                    ? "brightness-0 contrast-150 saturate-0 blur-md"
                     : "grayscale"
                 }`}
               />

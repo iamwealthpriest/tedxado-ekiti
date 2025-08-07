@@ -22,7 +22,7 @@ const Speakers = () => {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-70"
-          style={{ backgroundImage: "url('/src/assets/backdrop.webp')" }}
+          style={{ backgroundImage: "url('/backdrop.webp')" }}
         />
 
         {/* Ellipse Full Overlay */}

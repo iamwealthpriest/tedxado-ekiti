@@ -8,11 +8,11 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import Speakers from "./pages/Speakers";
 import Shop from "./pages/Shop";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <Router>
-
       <Toaster position="top-right" />
       <ScrollToTop />
       <Navbar />
@@ -22,6 +22,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
