@@ -2,6 +2,7 @@ import ProfileCard from "../components/ProfileCard";
 import { teamMembers } from "../constants/team";
 import JoinCommunity from "../components/JoinCommunity";
 import SpeakerGallery from "../components/SpeakerGallery";
+import FAQSection from "../components/FAQSection";
 import Button from "../components/Button";
 import ellipse from "../assets/speakers/Ellipse.webp";
 import { NavLink } from "react-router-dom";
@@ -102,6 +103,8 @@ const Speakers = () => {
           )}
         </div>
       </section>
+
+      <FAQSection />
 
       {/* Join our community Section */}
       <section className="bg-black px-6 py-16">
