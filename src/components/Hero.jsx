@@ -20,10 +20,13 @@ const Hero = () => {
           </span>
         </h2>
 
-        <div className="text-xl md:text-2xl lg:text-3xl mt-5 px-5 py-3 bg-orange/10 border-l-4 border-red max-w-[750px] leading-13 max-lg:leading-8">
-          <p>
-            A one-day gathering of thinkers, dreamers and <br />
-            builders live in Ado-Ekiti
+        <div className="text-xl md:text-2xl lg:text-3xl mt-5 px-5 py-3 bg-orange/10 border-l-4 border-red max-w-[800px] leading-13 max-lg:leading-8">
+          <p className="lg:hidden max-lg:flex">
+            A one-day gathering of thinkers, dreamers and builders live in Ekiti
+          </p>
+          <p className="lg:flex max-lg:hidden">
+            A one-day gathering of thinkers, dreamers and builders <br />
+            live in Ekiti
           </p>
           <p>September 20, 2025 | Ado-Ekiti, Nigeria</p>
         </div>
