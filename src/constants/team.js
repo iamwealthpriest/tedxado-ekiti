@@ -16,6 +16,7 @@ import LaughterA from "../assets/home/laughter.jpg";
 import VictorW from "../assets/home/wave.png";
 import RebeccaA from "../assets/home/Rebecca.png";
 import DeborahA from "../assets/home/Ajiboye.jpg";
+import Happiness from "../assets/teams/Happiness.png";
 
 export const heroTeam = [
   {
@@ -83,8 +84,13 @@ export const teamMembers = [
   },
   {
     name: "Favour Bukola",
-    role: "Lead, Hospitality & Experience",
+    role: "Lead, Welfare & Hospitality",
     image: Bukola,
+  },
+  {
+    name: "Ismail Happiness",
+    role: "Lead, Experience & Stage Design",
+    image: Happiness,
   },
   {
     name: "Deborah Ojo",
