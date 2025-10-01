@@ -5,7 +5,7 @@ import Deborah from "../assets/teams/deborah.png";
 import Ifeoluwa from "../assets/teams/ifeoluwa.png";
 import Timilehin from "../assets/teams/timi.png";
 import Adetomiwa from "../assets/teams/tomiwa.png";
-import Bukola from "../assets/teams/bukola.png";
+import Bukola from "../assets/teams/FavBukola.png";
 import Julius from "../assets/teams/julius.png";
 import Folashade from "../assets/teams/folashade.png";
 import Omisore from "../assets/teams/omisore.png";
@@ -84,12 +84,12 @@ export const teamMembers = [
   },
   {
     name: "Favour Bukola",
-    role: "Lead, Welfare & Hospitality",
+    role: "Lead, Experience & Hospitality",
     image: Bukola,
   },
   {
     name: "Ismail Happiness",
-    role: "Lead, Experience & Stage Design",
+    role: "Lead, Stage Design",
     image: Happiness,
   },
   {
