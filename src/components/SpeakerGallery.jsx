@@ -4,6 +4,17 @@ import { SpeakerArray } from "../constants";
 const SpeakerGallery = ({ comingSoon = false }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [showTextIndex, setShowTextIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1024
+  );
+
+  const isMobile = windowWidth < 640;
+
+  useEffect(() => {
+    const onResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -21,23 +32,41 @@ const SpeakerGallery = ({ comingSoon = false }) => {
         </h2>
       )}
 
-      <div className="flex px-4 flex-col sm:flex-row items-center justify-center sm:overflow-x-auto gap-4">
+  <div className="flex px-4 flex-col sm:flex-row sm:flex-nowrap items-center sm:justify-center justify-start sm:overflow-x-auto gap-4">
         {SpeakerArray.map((speaker, index) => {
           const isActive = index === activeIndex;
           const showText = index === showTextIndex;
 
+          // Compute percentage widths so all items together fill 98% (leave 2% gap)
+          const totalItems = SpeakerArray.length;
+          const foldedCount = Math.max(0, totalItems - 1);
+          const totalAvailable = 95; // increased by 2% and center the gallery on desktop
+          // preferred active width percent on desktop
+          // NOTE: user requested active item to be about 45% of previous size (previously 60%)
+          // 60 * 0.45 = 27 -> use 27% as the preferred active width
+          let preferredActive = 27;
+          let foldedPercent =
+            foldedCount > 0 ? (totalAvailable - preferredActive) / foldedCount : 0;
+          // Ensure folded items don't get too small
+          const minFolded = 6; // percent
+          if (foldedCount > 0 && foldedPercent < minFolded) {
+            foldedPercent = minFolded;
+            preferredActive = totalAvailable - foldedPercent * foldedCount;
+          }
+
+          const widthPercent = isMobile
+            ? 100
+            : isActive
+            ? preferredActive
+            : foldedPercent;
+
           return (
             <div
               key={index}
-              onMouseEnter={() =>
-                window.innerWidth >= 640 && setActiveIndex(index)
-              }
-              onClick={() => window.innerWidth < 640 && setActiveIndex(index)}
-              className={`relative transition-all duration-500 ease-in-out cursor-pointer rounded-xl overflow-hidden ${
-                isActive
-                  ? "w-full sm:w-[410px] h-[450px]"
-                  : "w-full sm:w-[170px] h-[450px]"
-              } ${comingSoon ? "bg-red-600" : ""}`}
+              onMouseEnter={() => !isMobile && setActiveIndex(index)}
+              onClick={() => isMobile && setActiveIndex(index)}
+              className={`relative transition-all duration-500 ease-in-out cursor-pointer rounded-xl overflow-hidden flex-shrink-0 ${comingSoon ? "bg-red-600" : ""}`}
+              style={{ width: `${widthPercent}%`, height: isMobile ? "380px" : "450px" }}
             >
               <img
                 src={speaker.image}
