@@ -15,6 +15,9 @@ import lawrenceE from "../assets/home/lawrence-ekundayo.png";
 import Regular from "../assets/home/Regular.webp";
 import VIP from "../assets/home/VIP.webp";
 import VVIP from "../assets/home/VVIP.webp";
+import EKSG from "../assets/home/EKSG.png";
+import Alluvium from "../assets/home/Alluvium.png";
+
 
 export const homeTickets = [
   {
@@ -36,16 +39,12 @@ export const homeTickets = [
 
 export const sponsors = [
   {
-    name: "cocacola",
-    icon: cocacola,
+    name: "EKSG",
+    icon: EKSG
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "microsoft",
-    icon: microsoft,
+    name: "Alluvium",
+    icon: Alluvium,
   },
   {
     name: "microsoft",
@@ -60,16 +59,24 @@ export const sponsors = [
     icon: figma,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "EKSG",
+    icon: EKSG
+  },
+  {
+    name: "Alluvium",
+    icon: Alluvium,
+  },
+  {
+    name: "microsoft",
+    icon: microsoft,
   },
   {
     name: "cocacola",
     icon: cocacola,
   },
   {
-    name: "microsoft",
-    icon: microsoft,
+    name: "figma",
+    icon: figma,
   },
 ];
 

@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import EventCountdown from "../components/EventCountdown";
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
+import SponsorMarquee from "../components/SponsorMarquee";
 
 const Voices = lazy(() => import("../components/Voices"));
 const PanelistView = lazy(() => import("../components/PanelistView"));
@@ -23,6 +24,7 @@ const Home = () => {
 
       <section className="w-full text-white bg-black">
         <Hero />
+        <SponsorMarquee/>
 
         <div className="p-[60px] max-lg:p-5 bg-white/5 flex flex-col">
           <div className="flex flex-row justify-between max-lg:flex-col">
