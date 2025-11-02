@@ -48,46 +48,6 @@ export const sponsors = [
     icon: Alluvium,
     color: "light",
   },
-  {
-    name: "EKSG",
-    icon: EKSG,
-    color: "dark",
-  },
-  {
-    name: "Alluvium",
-    icon: Alluvium,
-    color: "light",
-  },
-  {
-    name: "EKSG",
-    icon: EKSG,
-    color: "dark",
-  },
-  {
-    name: "Alluvium",
-    icon: Alluvium,
-    color: "light",
-  },
-  {
-    name: "EKSG",
-    icon: EKSG,
-    color: "dark",
-  },
-  {
-    name: "Alluvium",
-    icon: Alluvium,
-    color: "light",
-  },
-  {
-    name: "EKSG",
-    icon: EKSG,
-    color: "dark",
-  },
-  {
-    name: "Alluvium",
-    icon: Alluvium,
-    color: "light",
-  },
 ];
 
 export const SpeakerArray = [
