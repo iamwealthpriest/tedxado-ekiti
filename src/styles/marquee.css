@@ -13,11 +13,11 @@
 .marquee-content {
   display: flex;
   gap: 2rem;
-  animation: scroll 80s linear infinite;
+  animation: scroll 200s linear infinite;
 }
 
 .marquee-item {
-  height: 60px;
+  height: auto;
   flex-shrink: 0;
   object-fit: contain;
   filter: grayscale(50%) brightness(0.95) contrast(1);
@@ -29,6 +29,31 @@
   filter: grayscale(0%) brightness(1.15) contrast(1.25) saturate(1.12);
   opacity: 1;
   transform: scale(1.05);
+}
+
+.marquee-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-circle {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-shrink: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.sponsor-circle img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  filter: none;
 }
 
 @keyframes scroll {

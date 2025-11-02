@@ -40,43 +40,53 @@ export const homeTickets = [
 export const sponsors = [
   {
     name: "EKSG",
-    icon: EKSG
+    icon: EKSG,
+    color: "dark",
   },
   {
     name: "Alluvium",
     icon: Alluvium,
-  },
-  {
-    name: "microsoft",
-    icon: microsoft,
-  },
-  {
-    name: "cocacola",
-    icon: cocacola,
-  },
-  {
-    name: "figma",
-    icon: figma,
+    color: "light",
   },
   {
     name: "EKSG",
-    icon: EKSG
+    icon: EKSG,
+    color: "dark",
   },
   {
     name: "Alluvium",
     icon: Alluvium,
+    color: "light",
   },
   {
-    name: "microsoft",
-    icon: microsoft,
+    name: "EKSG",
+    icon: EKSG,
+    color: "dark",
   },
   {
-    name: "cocacola",
-    icon: cocacola,
+    name: "Alluvium",
+    icon: Alluvium,
+    color: "light",
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "EKSG",
+    icon: EKSG,
+    color: "dark",
+  },
+  {
+    name: "Alluvium",
+    icon: Alluvium,
+    color: "light",
+  },
+  {
+    name: "EKSG",
+    icon: EKSG,
+    color: "dark",
+  },
+  {
+    name: "Alluvium",
+    icon: Alluvium,
+    color: "light",
   },
 ];
 

@@ -19,7 +19,7 @@ const Marquee = () => {
     sponsors.forEach((s) => {
       const img = document.createElement("img");
       img.src = s.icon;
-      img.style.height = "60px";
+      img.style.height = "100px";
       img.style.marginRight = "32px";
       tempSpan.appendChild(img);
     });
@@ -45,12 +45,21 @@ const Marquee = () => {
       <div className="marquee" ref={containerRef}>
         <div className="marquee-content">
           {repeatedSponsors.map((sponsor, index) => (
-            <img
-              key={index}
-              src={sponsor.icon}
-              alt={sponsor.name}
-              className="marquee-item"
-            />
+            <div key={index} className="marquee-item-wrapper">
+              <div
+                className="sponsor-circle"
+                style={{
+                  backgroundColor:
+                    sponsor.color === "light" ? "#ffffff" : "transparent",
+                }}
+              >
+                <img
+                  src={sponsor.icon}
+                  alt={sponsor.name}
+                  className="marquee-item"
+                />
+              </div>
+            </div>
           ))}
         </div>
       </div>
