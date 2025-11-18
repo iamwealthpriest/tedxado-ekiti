@@ -13,8 +13,8 @@ import blessingD from "../assets/home/blessing-dada.png";
 import richardA from "../assets/home/richard-afahene.png";
 import lawrenceE from "../assets/home/lawrence-ekundayo.png";
 import Regular from "../assets/home/Regular.webp";
-import VIP from "../assets/home/VIP.webp";
-import VVIP from "../assets/home/VVIP.webp";
+import VIP from "../assets/home/VIP.png";
+import VVIP from "../assets/home/VVIP.png";
 import EKSG from "../assets/home/EKSG.png";
 import Alluvium from "../assets/home/Alluvium.png";
 
