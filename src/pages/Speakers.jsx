@@ -53,7 +53,7 @@ const Speakers = () => {
 
       {/* Speakers Section */}
       <section className="bg-black px-6 py-16">
-        <div className="max-w-7xl mx-auto">
+        <div>
           <div className="mb-8 sm:mb-12 text-left inline-block">
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white font-bricolage">
               Our Speakers
