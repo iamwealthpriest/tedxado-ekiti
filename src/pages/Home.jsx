@@ -90,7 +90,7 @@ const Home = () => {
             </div>
 
             <div className="flex items-center justify-center text-center min-w-[40%]">
-              <EventCountdown targetDate="2025-09-20T00:00:00" />
+              <EventCountdown targetDate="2025-12-06T00:00:00" />
             </div>
           </div>
         </div>
