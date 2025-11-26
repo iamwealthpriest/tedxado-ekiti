@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { SpeakerArray } from "../constants";
+import SpeakerModal from "./SpeakerModal";
 
-const SpeakerGallery = ({ comingSoon = false }) => {
+const SpeakerGallery = ({ speakers = SpeakerArray, maxItems = undefined }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [showTextIndex, setShowTextIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(
@@ -24,21 +25,20 @@ const SpeakerGallery = ({ comingSoon = false }) => {
     return () => clearTimeout(timeout);
   }, [activeIndex]);
 
+  // limit items if maxItems provided
+  const items = typeof maxItems === "number" ? speakers.slice(0, maxItems) : speakers;
+  const [modalSpeaker, setModalSpeaker] = useState(null);
+
   return (
     <div className="w-full py-8">
-      {comingSoon && (
-        <h2 className="text-4xl text-start font-extrabold text-red font-bricolage uppercase tracking-widest mb-8 animate-pulse">
-          Anticipate!
-        </h2>
-      )}
 
   <div className="flex px-4 flex-col sm:flex-row sm:flex-nowrap items-center sm:justify-center justify-start sm:overflow-x-auto gap-4">
-        {SpeakerArray.map((speaker, index) => {
+        {items.map((speaker, index) => {
           const isActive = index === activeIndex;
           const showText = index === showTextIndex;
 
-          // Compute percentage widths so all items together fill 98% (leave 2% gap)
-          const totalItems = SpeakerArray.length;
+          // Compute percentage widths so all items together fill 95% (leave small gap)
+          const totalItems = items.length;
           const foldedCount = Math.max(0, totalItems - 1);
           const totalAvailable = 95; // increased by 2% and center the gallery on desktop
           // preferred active width percent on desktop
@@ -64,21 +64,17 @@ const SpeakerGallery = ({ comingSoon = false }) => {
             <div
               key={index}
               onMouseEnter={() => !isMobile && setActiveIndex(index)}
-              onClick={() => isMobile && setActiveIndex(index)}
-              className={`relative transition-all duration-500 ease-in-out cursor-pointer rounded-xl overflow-hidden flex-shrink-0 ${comingSoon ? "bg-red-600" : ""}`}
+              onClick={() => setModalSpeaker(speaker)}
+              className={`relative transition-all duration-500 ease-in-out cursor-pointer rounded-xl overflow-hidden flex-shrink-0`}
               style={{ width: `${widthPercent}%`, height: isMobile ? "380px" : "450px" }}
             >
               <img
                 src={speaker.image}
                 alt={speaker.name}
-                className={`w-full h-full object-cover ${
-                  comingSoon
-                    ? "brightness-0 contrast-150 saturate-0 blur-md"
-                    : "grayscale"
-                }`}
+                className={`w-full h-full object-cover grayscale`}
               />
 
-              {(isActive || window.innerWidth < 640) && !comingSoon && (
+              {(isActive || window.innerWidth < 640) && (
                 <div className="absolute bottom-0 left-0 w-full h-[90px] bg-black/60 backdrop-blur-lg px-4 py-3 text-white flex flex-col justify-center items-center rounded-t-xl transition-opacity duration-300 ease-in-out">
                   {(showText || window.innerWidth < 640) && (
                     <>
@@ -96,6 +92,9 @@ const SpeakerGallery = ({ comingSoon = false }) => {
           );
         })}
       </div>
+      {modalSpeaker && (
+        <SpeakerModal speaker={modalSpeaker} onClose={() => setModalSpeaker(null)} />
+      )}
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Hero = () => {
             A one-day gathering of thinkers, dreamers and builders <br />
             live in Ekiti
           </p>
-          <p>September 20, 2025 | Ado-Ekiti, Nigeria</p>
+          <p>December 6, 2025 | Ado-Ekiti, Nigeria</p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-8">

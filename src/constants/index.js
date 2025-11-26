@@ -3,21 +3,21 @@ import twitterIcon from "../assets/xlogo.png";
 import linkedinIcon from "../assets/linkedinlogo.png";
 import youtubeIcon from "../assets/youtubelogo.png";
 import whatsappIcon from "../assets/whatsapplogo.png";
-import cocacola from "../assets/home/cocacola.svg";
-import figma from "../assets/home/figma.svg";
-import microsoft from "../assets/home/microsoft.svg";
 import JD from "../assets/home/Jesudamilare.png";
-import femiA from "../assets/home/femi-aluko.png";
+import bello from "../assets/home/bello.png";
+import taiwo from "../assets/home/taiwo.jpg";
+import Oluwaseun from "../assets/home/oluwaseun.png";
 import simisolaA from "../assets/home/SimisolaA.png";
 import blessingD from "../assets/home/blessing-dada.png";
 import richardA from "../assets/home/richard-afahene.png";
 import lawrenceE from "../assets/home/lawrence-ekundayo.png";
-import Regular from "../assets/home/Regular.webp";
+import Regular from "../assets/home/Regular.png";
 import VIP from "../assets/home/VIP.png";
 import VVIP from "../assets/home/VVIP.png";
 import EKSG from "../assets/home/EKSG.png";
 import Alluvium from "../assets/home/Alluvium.png";
 import HIC from "../assets/home/hic.jpg";
+import tpc from "../assets/home/tpc.png";
 
 
 export const homeTickets = [
@@ -54,6 +54,11 @@ export const sponsors = [
     icon: HIC,
     color: "light",
   },
+  {
+    name: "The Place Collective",
+    icon: tpc,
+    color: "light",
+  },
 ];
 
 export const SpeakerArray = [
@@ -63,9 +68,21 @@ export const SpeakerArray = [
     image: JD,
   },
   {
-    name: "Femi Aluko",
-    position: "CEO, Chowdeck",
-    image: femiA,
+    name: "Blessing Dada",
+    position: "Executive Director at Sarafacdi",
+    image: blessingD,
+  },
+  {
+    name: "Oladele Bello",
+    position: "Filmmaker & Media Artist",
+    image: bello,
+    bio:"Oladele Bello is a multidisciplinary artist working across film, video art, photography, poetry, and theatre. Based in Nigeria and trained at the Federal University Oye-Ekiti, his work explores identity, memory, and the emotional textures of everyday life.His art has been exhibited in Lagos, Saint Petersburg, Pietrasanta, and Fez, including the Russian Museum of Ethnography, Tiwani Contemporary, The Project Space, and the Goethe-Institut. His video-art piece Ghost earned Jury Pick at the PLURAL+ International Festival and multiple continental recognitions.Oladele has served as Media Lead at The QDance Centre, artistic assistant to Qudus Onikeku, and taught Media Art at The QSchool. He is Yellow Manager at Film Rats Yellow and formerly led media for The Annual Film Mischief.A fellow of the Imora Arts Intensive and Associate Producer with Ankara & Black Playhouse, he is also a founding member of The 104 Collective, an emerging ecosystem of unconventional creators."
+  },
+  {
+    name: "Dr. Osadola Oluwaseun",
+    position: "African History Scholar",
+    image: Oluwaseun,
+    bio: "Dr. Osadola Oluwaseun Samuel, PhD,leads the Department of History and International Studies at the Federal University, Oye Ekiti, where he investigates how power, memory, and identity shape the African story.His work spans federalism, secession movements, and diplomatic and war history, offering sharp insight into the political tensions that define Nigeria today.Through his books and scholarship, he illuminates the lived realities of communities navigating conflict, displacement, and development.Dr. Osadola's voice is reshaping how we understand the past, and how it continues to shape the future.",
   },
   {
     name: "Awe Similoluwa",
@@ -73,19 +90,21 @@ export const SpeakerArray = [
     image: simisolaA,
   },
   {
-    name: "Blessing Dada",
-    position: "Executive Director at Sarafacdi",
-    image: blessingD,
+    name: "Lawrence Ekundayo",
+    position: "Founder, Raise a Farmer Initiative (RAFI)",
+    image: lawrenceE,
+    bio: "Mayowa Lawrence Ekundayo is a development catalyst reshaping the horticulture value chain in Southwest Nigeria. Known as Farmer Lawrence, he is domiciled in Ekiti, where his work strengthens agriculture, community growth, and youth empowerment. As co-founder and COO of PostAgvest Solutions, he builds market linkages for smallholder farmers and expands access to nutritious food. Through the Raise A Farmer Initiative and the SAFE Summit, he mobilizes youth and stakeholders to rethink the future of agriculture. He coordinated the 2SCALE Vegetable Syndicate Partnership in Southwest Nigeria, that supported over 2600 farmers and nurtured 35 agribusiness clusters. His research and policy contributions continue to influence the region's food systems. Whether training young farmers or strengthening local value chains, Mayowa's work drives dignity, opportunity, and sustainable growth.",
   },
   {
     name: "Richard Afahene",
     position: "Member, Toastmasters International",
     image: richardA,
+    bio: "Richard Afahaene works where people, design, and data intersect, building systems that emerging cities will depend on tomorrow. His work goes beyond infrastructure, it confronts deeper questions about who society is becoming.His belief is radical yet simple: If we fix the family, we reengineer society.From advocating `Family as a Service` to building in a fast-rising African model city, Richard is shaping both place and people. He recently completed the fully funded Product Leadership Academy Fellowship, ending at the Inspire Africa Conference in Rwanda.He is inspiring a generation to build with intention.",
   },
   {
-    name: "Lawrence Ekundayo",
-    position: "Founder, Raise a Farmer Initiative (RAFI)",
-    image: lawrenceE,
+    name: "Taiwo Ojo",
+    position: "CEO/Co-Founder, Alluvium",
+    image: taiwo,
   },
 ];
 

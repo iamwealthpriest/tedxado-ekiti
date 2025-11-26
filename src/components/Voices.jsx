@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import SpeakerGallery from "./SpeakerGallery";
+import { SpeakerArray } from "../constants";
 
 const Voices = () => {
-  const comingSoon = true;
 
   return (
     <div className="px-[60px] max-lg:px-[20px] py-15">
@@ -26,21 +26,11 @@ const Voices = () => {
 
       <div>
         <h1 className="heading-with-underline">Our Speakers</h1>
-        <SpeakerGallery comingSoon={comingSoon} />
+        <SpeakerGallery speakers={SpeakerArray.slice(0, 5)} />
 
-        {comingSoon ? (
-          <div className="flex items-center justify-center">
-            <Button
-              text="View all speakers"
-              className="btn-orange cursor-not-allowed"
-              disabled
-            />
-          </div>
-        ) : (
-          <NavLink to="/speakers" className="flex items-center justify-center">
-            <Button text="View all speakers" className="btn-orange" />
-          </NavLink>
-        )}
+        <NavLink to="/speakers" className="flex items-center justify-center">
+          <Button text="View all speakers" className="btn-orange" />
+        </NavLink>
       </div>
     </div>
   );

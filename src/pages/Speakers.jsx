@@ -2,6 +2,7 @@ import ProfileCard from "../components/ProfileCard";
 import { teamMembers } from "../constants/team";
 import JoinCommunity from "../components/JoinCommunity";
 import SpeakerGallery from "../components/SpeakerGallery";
+import { SpeakerArray } from "../constants";
 import FAQSection from "../components/FAQSection";
 import Button from "../components/Button";
 import ellipse from "../assets/speakers/Ellipse.webp";
@@ -9,7 +10,6 @@ import { NavLink } from "react-router-dom";
 import SEO from "../components/SEO";
 
 const Speakers = () => {
-  const comingSoon = true;
 
   return (
     <>
@@ -60,8 +60,9 @@ const Speakers = () => {
             </h2>
             <div className="h-1 bg-red-600 mt-2" />
           </div>
-          <div>
-            <SpeakerGallery comingSoon={comingSoon} />
+          <div className="space-y-10">
+            <SpeakerGallery speakers={SpeakerArray.slice(0, 4)} />
+            <SpeakerGallery speakers={SpeakerArray.slice(4, 8)} />
           </div>
         </div>
       </section>
@@ -83,24 +84,13 @@ const Speakers = () => {
                 image={member.image}
                 name={member.name}
                 role={member.role}
-                comingSoon={comingSoon}
               />
             ))}
           </div>
 
-          {comingSoon ? (
-            <div className="flex items-center justify-center mt-8">
-              <Button
-                text="View all panelists"
-                className="btn-orange cursor-not-allowed"
-                disabled
-              />
-            </div>
-          ) : (
-            <NavLink to="/team" className="flex items-center justify-center">
-              <Button text="View all panelists" className="btn-orange" />
-            </NavLink>
-          )}
+          <NavLink to="/team" className="flex items-center justify-center">
+            <Button text="View all panelists" className="btn-orange" />
+          </NavLink>
         </div>
       </section>
 
