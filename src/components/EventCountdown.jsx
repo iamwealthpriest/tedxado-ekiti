@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
-const Countdown = () => {
-  const eventDate = new Date("2025-11-15T00:00:00");
+const Countdown = ({ targetDate }) => {
+  let eventDate = targetDate ? new Date(targetDate) : new Date("2025-11-15T00:00:00");
+  if (isNaN(eventDate.getTime())) {
+    eventDate = new Date("2025-11-15T00:00:00");
+  }
   const [timeLeft, setTimeLeft] = useState({});
   const [eventStatus, setEventStatus] = useState("");
 
@@ -31,7 +34,8 @@ const Countdown = () => {
     calculateTime();
     const interval = setInterval(calculateTime, 1000);
     return () => clearInterval(interval);
-  }, []);
+    // Re-run if targetDate changes
+  }, [targetDate]);
 
   return (
     <div className="w-full flex items-center justify-center px-4 py-10">
