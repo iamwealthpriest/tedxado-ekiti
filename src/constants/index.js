@@ -17,6 +17,7 @@ import VIP from "../assets/home/VIP.png";
 import VVIP from "../assets/home/VVIP.png";
 import EKSG from "../assets/home/EKSG.png";
 import Alluvium from "../assets/home/Alluvium.png";
+import HIC from "../assets/home/hic.jpg";
 
 
 export const homeTickets = [
@@ -46,6 +47,11 @@ export const sponsors = [
   {
     name: "Alluvium",
     icon: Alluvium,
+    color: "light",
+  },
+  {
+    name: "High Impact Careers",
+    icon: HIC,
     color: "light",
   },
 ];
