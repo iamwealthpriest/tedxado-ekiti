@@ -69,6 +69,31 @@ export const SpeakerArray = [
     bio: "Jesudamilare JD AdesegunDavid is a Thought Alchemist and Community Transformation Strategist. He is the cofounder and CEO of Ennovate Lab, an innovation hub and startup foundry building resilient innovation ecosystems in underserved university communities across Africa.Through Qeola, he helps visionary founders craft timeless brands and digital experiences. His flagship initiative, Cognessay, has equipped over 10000 Africans including students, educators, professionals and government officials with critical and creative thinking skills since 2018.JD cofounded Children that Change the World, a nonprofit providing inclusive educational resources for underserved children. A 2011 Agronomy graduate and 2015 Teach With Africa Fellow, he bridges diverse disciplines to drive impact.Recognized on YNaijas 2019 New Establishment List, he has mentored hundreds of entrepreneurs through partnerships with GIZ, Hult Foundation, Startup Grind and others. He serves on boards including SprinNG Literary Society and DeepSpace, and holds fellowships with We Will Lead Africa and Praxis Academy Redemptive Business.Married to Temitayo, they have three boys and one girl.",
   },
   {
+    name: "Taiwo Ojo",
+    position: "CEO/Co-Founder, Alluvium",
+    image: taiwo,
+    bio: "Taiwo Ojo, was a Big Four consultant, turned technology leader, with experience going on two decades in IT Service Management, Digital transformation, and AI governance.As CEO of Alluvium, he has led some of the largest Atlassian tool consolidations, delivering agility, scale, and cost savings for global enterprises.Passionate about responsible AI, he helps organizations innovate securely while protecting sensitive data and maintaining their competitive edge in the AI-driven economy.Beyond the boardroom, he believes in the power of human connection and is always happy to exchange ideas over breakfast, lunch, or dinner.Taiwo also thrives on Philantropy. He’s President of the JayTee Ojo Foundation which uses IT and Sports as a vehicle to make the young person globally competitive.",
+  },
+  {
+    name: "Awe Similoluwa",
+    position: "Legal & Compliance Associate",
+    image: simisolaA,
+    bio: "Similoluwa Awe is a Lawyer and Youth Development Practitioner with 9 years of professional excellence, purpose fulfillment and passion accomplishment. She is the founder of Hey! Teens and Twenties and a multi-award winner to attest to her all round impact in making the global goal tagged Agenda 2030 achievable.She has a background in law, specialising in legal advisory and compliance for startups and general commercial firms, real estate also with key interest in Medical Law and Ethics. Being a passionate writer, Similoluwa has written a lot of transformational write-ups for youth development and the nation's growth. She is the author of the books Writers' Love Language and Everything Ekiti, born out of her passion for her home country, which addresses history, politics, tourism, and entertainment amongst others. As a former member of the United Nations Population Funds Youth Participatory Platform, aSustainable Development Goals Champion, Member Advisory Committee for the Knowledge Transfer Network UK, African Innovation Action plan for Ekiti state, Member Wrapper Tribe of the Wrapper Network, she has been able to contribute her voice in harnessing and attaining the nation's full potential.Notable amongst her numerous awards include winning a medal of honour and recognition for her impact in Sustainable Development Goals in 2019 by Ekiti state government, the Global Strategic Leadership Award by the Salem Open University in 2025, the Freshwater African Youth Foundation Award of Recognition in 2021, the One Ekiti Award for Advocacy in 2020, One million naira 1st prize for JKF post-graduate essay in 2022 amongst others. Through her personal projects and volunteering, she has reached out and impacted not less than 6000 young persons over the years and her passion and tenacity remains unwithered.",
+  },
+
+  {
+    name: "Richard Afahene",
+    position: "Co-Founder SlikRide",
+    image: richardA,
+    bio: "Richard Afahaene works where people, design, and data intersect, building systems that emerging cities will depend on tomorrow. His work goes beyond infrastructure, it confronts deeper questions about who society is becoming.His belief is radical yet simple: If we fix the family, we reengineer society.From advocating `Family as a Service` to building in a fast-rising African model city, Richard is shaping both place and people. He recently completed the fully funded Product Leadership Academy Fellowship, ending at the Inspire Africa Conference in Rwanda.He is inspiring a generation to build with intention.",
+  },
+  {
+    name: "Lawrence Ekundayo",
+    position: "COO & Co-Founder, PostAgvest Solutions Limited",
+    image: lawrenceE,
+    bio: "Mayowa Lawrence Ekundayo is a development catalyst reshaping the horticulture value chain in Southwest Nigeria. Known as Farmer Lawrence, he is domiciled in Ekiti, where his work strengthens agriculture, community growth, and youth empowerment. As co-founder and COO of PostAgvest Solutions, he builds market linkages for smallholder farmers and expands access to nutritious food. Through the Raise A Farmer Initiative and the SAFE Summit, he mobilizes youth and stakeholders to rethink the future of agriculture. He coordinated the 2SCALE Vegetable Syndicate Partnership in Southwest Nigeria, that supported over 2600 farmers and nurtured 35 agribusiness clusters. His research and policy contributions continue to influence the region's food systems. Whether training young farmers or strengthening local value chains, Mayowa's work drives dignity, opportunity, and sustainable growth.",
+  },
+  {
     name: "Blessing Dada",
     position: "Executive Director at Sarafacdi",
     image: blessingD,
@@ -85,30 +110,6 @@ export const SpeakerArray = [
     position: "African History Scholar",
     image: Oluwaseun,
     bio: "Dr. Osadola Oluwaseun Samuel, PhD,leads the Department of History and International Studies at the Federal University, Oye Ekiti, where he investigates how power, memory, and identity shape the African story.His work spans federalism, secession movements, and diplomatic and war history, offering sharp insight into the political tensions that define Nigeria today.Through his books and scholarship, he illuminates the lived realities of communities navigating conflict, displacement, and development.Dr. Osadola's voice is reshaping how we understand the past, and how it continues to shape the future.",
-  },
-  {
-    name: "Awe Similoluwa",
-    position: "Lawyer",
-    image: simisolaA,
-    bio: "Similoluwa Awe is a Lawyer and Youth Development Practitioner with 9 years of professional excellence, purpose fulfillment and passion accomplishment. She is the founder of Hey! Teens and Twenties and a multi-award winner to attest to her all round impact in making the global goal tagged Agenda 2030 achievable.She has a background in law, specialising in legal advisory and compliance for startups and general commercial firms, real estate also with key interest in Medical Law and Ethics. Being a passionate writer, Similoluwa has written a lot of transformational write-ups for youth development and the nation's growth. She is the author of the books Writers' Love Language and Everything Ekiti, born out of her passion for her home country, which addresses history, politics, tourism, and entertainment amongst others. As a former member of the United Nations Population Funds Youth Participatory Platform, aSustainable Development Goals Champion, Member Advisory Committee for the Knowledge Transfer Network UK, African Innovation Action plan for Ekiti state, Member Wrapper Tribe of the Wrapper Network, she has been able to contribute her voice in harnessing and attaining the nation's full potential.Notable amongst her numerous awards include winning a medal of honour and recognition for her impact in Sustainable Development Goals in 2019 by Ekiti state government, the Global Strategic Leadership Award by the Salem Open University in 2025, the Freshwater African Youth Foundation Award of Recognition in 2021, the One Ekiti Award for Advocacy in 2020, One million naira 1st prize for JKF post-graduate essay in 2022 amongst others. Through her personal projects and volunteering, she has reached out and impacted not less than 6000 young persons over the years and her passion and tenacity remains unwithered.",
-  },
-  {
-    name: "Lawrence Ekundayo",
-    position: "Founder, Raise a Farmer Initiative (RAFI)",
-    image: lawrenceE,
-    bio: "Mayowa Lawrence Ekundayo is a development catalyst reshaping the horticulture value chain in Southwest Nigeria. Known as Farmer Lawrence, he is domiciled in Ekiti, where his work strengthens agriculture, community growth, and youth empowerment. As co-founder and COO of PostAgvest Solutions, he builds market linkages for smallholder farmers and expands access to nutritious food. Through the Raise A Farmer Initiative and the SAFE Summit, he mobilizes youth and stakeholders to rethink the future of agriculture. He coordinated the 2SCALE Vegetable Syndicate Partnership in Southwest Nigeria, that supported over 2600 farmers and nurtured 35 agribusiness clusters. His research and policy contributions continue to influence the region's food systems. Whether training young farmers or strengthening local value chains, Mayowa's work drives dignity, opportunity, and sustainable growth.",
-  },
-  {
-    name: "Richard Afahene",
-    position: "Member, Toastmasters International",
-    image: richardA,
-    bio: "Richard Afahaene works where people, design, and data intersect, building systems that emerging cities will depend on tomorrow. His work goes beyond infrastructure, it confronts deeper questions about who society is becoming.His belief is radical yet simple: If we fix the family, we reengineer society.From advocating `Family as a Service` to building in a fast-rising African model city, Richard is shaping both place and people. He recently completed the fully funded Product Leadership Academy Fellowship, ending at the Inspire Africa Conference in Rwanda.He is inspiring a generation to build with intention.",
-  },
-  {
-    name: "Taiwo Ojo",
-    position: "CEO/Co-Founder, Alluvium",
-    image: taiwo,
-    bio: "Taiwo Ojo, was a Big Four consultant, turned technology leader, with experience going on two decades in IT Service Management, Digital transformation, and AI governance.As CEO of Alluvium, he has led some of the largest Atlassian tool consolidations, delivering agility, scale, and cost savings for global enterprises.Passionate about responsible AI, he helps organizations innovate securely while protecting sensitive data and maintaining their competitive edge in the AI-driven economy.Beyond the boardroom, he believes in the power of human connection and is always happy to exchange ideas over breakfast, lunch, or dinner.Taiwo also thrives on Philantropy. He’s President of the JayTee Ojo Foundation which uses IT and Sports as a vehicle to make the young person globally competitive.",
   },
 ];
 
