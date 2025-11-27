@@ -5,7 +5,7 @@ import youtubeIcon from "../assets/youtubelogo.png";
 import whatsappIcon from "../assets/whatsapplogo.png";
 import JD from "../assets/home/Jesudamilare.png";
 import bello from "../assets/home/bello.png";
-import taiwo from "../assets/home/taiwo.jpg";
+import taiwo from "../assets/home/taiwo.png";
 import Oluwaseun from "../assets/home/oluwaseun.png";
 import simisolaA from "../assets/home/SimisolaA.png";
 import blessingD from "../assets/home/blessing-dada.png";
@@ -16,7 +16,7 @@ import VIP from "../assets/home/VIP.png";
 import VVIP from "../assets/home/VVIP.png";
 import EKSG from "../assets/home/EKSG.png";
 import Alluvium from "../assets/home/Alluvium.png";
-import HIC from "../assets/home/hic.jpg";
+import HIC from "../assets/home/hic.png";
 import tpc from "../assets/home/tpc.png";
 
 
@@ -66,11 +66,13 @@ export const SpeakerArray = [
     name: "Jesudamilare Adesegun-David",
     position: "CEO, Ennovate Lab",
     image: JD,
+    bio: "Jesudamilare JD AdesegunDavid is a Thought Alchemist and Community Transformation Strategist. He is the cofounder and CEO of Ennovate Lab, an innovation hub and startup foundry building resilient innovation ecosystems in underserved university communities across Africa.Through Qeola, he helps visionary founders craft timeless brands and digital experiences. His flagship initiative, Cognessay, has equipped over 10000 Africans including students, educators, professionals and government officials with critical and creative thinking skills since 2018.JD cofounded Children that Change the World, a nonprofit providing inclusive educational resources for underserved children. A 2011 Agronomy graduate and 2015 Teach With Africa Fellow, he bridges diverse disciplines to drive impact.Recognized on YNaijas 2019 New Establishment List, he has mentored hundreds of entrepreneurs through partnerships with GIZ, Hult Foundation, Startup Grind and others. He serves on boards including SprinNG Literary Society and DeepSpace, and holds fellowships with We Will Lead Africa and Praxis Academy Redemptive Business.Married to Temitayo, they have three boys and one girl.",
   },
   {
     name: "Blessing Dada",
     position: "Executive Director at Sarafacdi",
     image: blessingD,
+    bio: "Blessing Tunde Dada is an Educational Development Practitioner, Innovator, social entrepreneur, and digital equity advocate committed to transforming underserved communities through inclusive education and technology. He currently serves as a UNESCO SDG4 Youth and Student Network as African Representative and now High-Level Steering Committee (HLSC) Youth Leader (Global), contributing to global policy conversations on the future of education. Blessing is a 2023 Chevening Scholar and holds an MA in International Education and Development from the University of Sussex, where he championed student-centered policies benefiting over 5,000 international students. For more than six years, he has served in various leadership capacities such as OneUK, CYFI, YALI Network, GOTNI Fellow, Global Peace Chain, and many more. His work has focused on addressing systemic barriers to education, digital access, and youth empowerment. He is the founder of Slum & Rural Aid for African Child Development Initiative (SARAFACDI) and co-founder of GenexTED, an edtech initiative that leverages AI and digital tools to bridge the digital divide. Through impactful programs like Back2School, TechUpRuralGirls, and SabiLearn Ecosystem, he has reached over 20,000 children and youth with digital literacy, STEM training, scholarships, and community development opportunities.With lived experience as his driving force, Blessing is dedicated to building a world where every child, regardless of background, can learn, thrive, and access meaningful opportunities.",
   },
   {
     name: "Oladele Bello",
@@ -88,6 +90,7 @@ export const SpeakerArray = [
     name: "Awe Similoluwa",
     position: "Lawyer",
     image: simisolaA,
+    bio: "Similoluwa Awe is a Lawyer and Youth Development Practitioner with 9 years of professional excellence, purpose fulfillment and passion accomplishment. She is the founder of Hey! Teens and Twenties and a multi-award winner to attest to her all round impact in making the global goal tagged Agenda 2030 achievable.She has a background in law, specialising in legal advisory and compliance for startups and general commercial firms, real estate also with key interest in Medical Law and Ethics. Being a passionate writer, Similoluwa has written a lot of transformational write-ups for youth development and the nation's growth. She is the author of the books Writers' Love Language and Everything Ekiti, born out of her passion for her home country, which addresses history, politics, tourism, and entertainment amongst others. As a former member of the United Nations Population Funds Youth Participatory Platform, aSustainable Development Goals Champion, Member Advisory Committee for the Knowledge Transfer Network UK, African Innovation Action plan for Ekiti state, Member Wrapper Tribe of the Wrapper Network, she has been able to contribute her voice in harnessing and attaining the nation's full potential.Notable amongst her numerous awards include winning a medal of honour and recognition for her impact in Sustainable Development Goals in 2019 by Ekiti state government, the Global Strategic Leadership Award by the Salem Open University in 2025, the Freshwater African Youth Foundation Award of Recognition in 2021, the One Ekiti Award for Advocacy in 2020, One million naira 1st prize for JKF post-graduate essay in 2022 amongst others. Through her personal projects and volunteering, she has reached out and impacted not less than 6000 young persons over the years and her passion and tenacity remains unwithered.",
   },
   {
     name: "Lawrence Ekundayo",
@@ -105,6 +108,7 @@ export const SpeakerArray = [
     name: "Taiwo Ojo",
     position: "CEO/Co-Founder, Alluvium",
     image: taiwo,
+    bio: "Taiwo Ojo, was a Big Four consultant, turned technology leader, with experience going on two decades in IT Service Management, Digital transformation, and AI governance.As CEO of Alluvium, he has led some of the largest Atlassian tool consolidations, delivering agility, scale, and cost savings for global enterprises.Passionate about responsible AI, he helps organizations innovate securely while protecting sensitive data and maintaining their competitive edge in the AI-driven economy.Beyond the boardroom, he believes in the power of human connection and is always happy to exchange ideas over breakfast, lunch, or dinner.Taiwo also thrives on Philantropy. He’s President of the JayTee Ojo Foundation which uses IT and Sports as a vehicle to make the young person globally competitive.",
   },
 ];
 
